@@ -2,7 +2,7 @@
 <br><br>
 
 <div align="center">
-  <a href="https://teambiscochito.github.io/animales-salvajes-web/index.html" align="center">❤ Página activa del Proyecto Web · Landing Page y paginación ❤</a>
+  <a href="https://teambiscochito.github.io/animales-salvajes-web/index.html" align="center" target="_blank">❤ Página activa del Proyecto Web · Landing Page y paginación ❤</a>
 </div>
 <br><br>
 
