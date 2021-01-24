@@ -522,7 +522,7 @@ section.pricing-table h3.text-center {
 }
 
 section.pricing-table hr {
-    border-top: 1px solid grey;
+    border-top: 1px solid white;
 }
 
 section.pricing-table p.text-center {
@@ -577,7 +577,7 @@ span.icon.icon-power-off {
     line-height: 70px;
     left: 0;
     color: #fff;
-    font-size: 65px;
+    font-size: 20px;
     font-weight: 900;
     padding: 10px 30px;
     background-color: rgba(0, 0, 0, 0.65);
@@ -652,7 +652,7 @@ span.icon.icon-power-off {
     line-height: 70px;
     left: 0;
     color: #fff;
-    font-size: 65px;
+    font-size: 45px;
     font-weight: 900;
     padding: 10px 30px;
     background-color: rgba(0, 0, 0, 0.65);
@@ -726,7 +726,7 @@ span.icon.icon-power-off {
     line-height: 70px;
     left: 0;
     color: #fff;
-    font-size: 65px;
+    font-size: 20px;
     font-weight: 900;
     padding: 10px 30px;
     background-color: rgba(0, 0, 0, 0.65);
@@ -1143,7 +1143,7 @@ h4.payment-head {
     padding: 0 3%;
 }
 
-.payment-online-form-left input[type="text"] {
+.payment-online-form-left input[type="number"], .payment-online-form-left input[type="text"], #mensaje {
     padding: 1em 1em;
     color: #485460;
     width: 42%;
@@ -1165,7 +1165,7 @@ input#datepicker {
     padding: 1em 1em 1em 1em;
 }
 
-.payment-online-form-left input[type="text"]:hover {
+.payment-online-form-left input[type="number"]:hover, .payment-online-form-left input[type="text"]:hover, #mensaje:hover {
     border-color: #fa6e6f;
 }
 
@@ -1178,20 +1178,21 @@ input#datepicker {
     position: relative;
 }
 
-.payment-online-form-left ul li:first-child input[type="text"] {
+.payment-online-form-left ul li:first-child input[type="number"], .payment-online-form-left ul li:first-child input[type="text"], #mensaje {
     margin-right: 5%;
 }
 
-.payment-online-form-left input[type="text"]:active, .payment-online-form-left input[type="text"]:hover {
+.payment-online-form-left input[type="number"]:active, .payment-online-form-left input[type="text"]:active, #mensaje:active, .payment-online-form-left input[type="number"]:hover, .payment-online-form-left input[type="text"]:hover, #mensaje:hover {
     border-color: #54CEB7;
     color: #3498DB;
 }
 
 .shipping {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     display: inline-block;
-    background: url(../images/icon.png) no-repeat -111px -26px;
+    margin-left: 28px;
+    background: url(../images/icon.png) no-repeat -150px 0px;
 }
 
 .payment {
@@ -1230,7 +1231,7 @@ input#datepicker {
     background: #2980b9;
 }
 
-a.order {
+button[name="submit"] {
     background: #1abc9c;
     padding: 6px 20px;
     border: none;
@@ -1247,7 +1248,7 @@ a.order {
     text-decoration: none;
 }
 
-a.order:hover {
+button[name="submit"]:hover {
     color: #fff;
     background: #16a085;
 }
@@ -2934,7 +2935,7 @@ section.footer .footer-address p.mail {
         padding: 20px 10px 30px 10px;
     }
 
-    .payment-online-form-left input[type="text"] {
+    .payment-online-form-left input[type="number"], .payment-online-form-left input[type="text"], #mensaje {
         width: 47%;
     }
 
@@ -3188,9 +3189,18 @@ section.footer .footer-address p.mail {
         font-size: 25px;
     }
 
-    .payment-online-form-left input[type="text"] {
+    .payment-online-form-left input[type="number"], .payment-online-form-left input[type="text"], #mensaje {
         width: 100%;
     }
 }
 
+#imagenCarta {
+    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(../images/newImages/elefante.jpg) no-repeat center;
+    background-size: contain;
+}
+#imganimal {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/newImages/wallpaper1.jpg) no-repeat center;
+    background-size: contain;
+    height: 100%;
+}
 

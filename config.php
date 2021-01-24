@@ -9,6 +9,5 @@ $config = array(
 );
 
 require_once('DBConnection.php');
-require_once('functions.php');
 $dbc = new DBConnection($config);
 $con = $dbc->getCon();

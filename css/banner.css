@@ -166,6 +166,7 @@ body {
 
 #content #slider .navigation ul li:hover .li__info {
     opacity: 0.9 !important;
+    color: red;
 }
 
 #content #slider .navigation ul li.active .li__hoverLine .l {
@@ -190,9 +191,9 @@ body {
     font-size: 12px;
     display: none;
     font-style: normal;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 0px;
-    color: white;
+    color: black;
     float: left;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -203,9 +204,9 @@ body {
 #content #slider .navigation ul li .li__info-mask .mask__infoContainer h4 {
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     letter-spacing: 0px;
-    color: white;
+    color: black;
     float: left;
     padding-left: 6px;
     text-transform: uppercase;
@@ -222,6 +223,7 @@ body {
 
 #content #slider .navigation ul li .li__info-mask .mask__infoContainer {
     opacity: 1;
+    color: red;
 }
 
 #content #slider .navigation ul li .li__hoverLine {
@@ -233,7 +235,7 @@ body {
 #content #slider .navigation ul li .li__hoverLine .l {
     width: 0%;
     height: 1px;
-    background: #cccccc;
+    background: black;
     margin: 0 auto;
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
