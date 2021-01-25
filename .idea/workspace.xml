@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="Añadir favicon (todos los dispositivos)" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="gh-pages" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1nO9uCubK2OpL1AI2oMDDkEFqE9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Keyster\Desktop\pruebagitweb\archivos php\img" />
+      <recent name="C:\Users\Keyster\Desktop\pruebagitweb\archivos php" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="PHP BIWS" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="" />
+      <created>1611250490814</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611250490814</updated>
+      <workItem from="1611250491890" duration="16163000" />
+      <workItem from="1611317771496" duration="63263000" />
+      <workItem from="1611581369574" duration="197000" />
+    </task>
+    <task id="LOCAL-00001" summary="estilos modificados y ordenados (fallos)">
+      <created>1611251332963</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611251332963</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add php files + paginación (con iFrame)">
+      <created>1611254071118</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611254071118</updated>
+    </task>
+    <task id="LOCAL-00003" summary="funcionalidad php para github (prueba)">
+      <created>1611254717248</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611254717248</updated>
+    </task>
+    <task id="LOCAL-00004" summary="php + paginación final">
+      <created>1611305463236</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611305463236</updated>
+    </task>
+    <task id="LOCAL-00005" summary="conversión a php + agregar cartas a la bases de datos">
+      <created>1611531918104</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611531918104</updated>
+    </task>
+    <task id="LOCAL-00006" summary="footer.php acabado (falta flexbox),  Equipo Desarrollo (acabado, rellenar datos), Añadir Carta (acabado), reseñas (acabado, bugs movil flexbox), Cartas (por finalizar), Nosotros (acabado, agregar contenido nuevo), Inicio (acabado, actualizar pantalla)">
+      <created>1611549565670</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611549565670</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Añadir favicon (todos los dispositivos)">
+      <created>1611581485354</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611581485354</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="estilos modificados y ordenador (fallos)" />
+    <MESSAGE value="estilos modificados y ordenados (fallos)" />
+    <MESSAGE value="add php files + paginación (con iFrame)" />
+    <MESSAGE value="funcionalidad php para github (prueba)" />
+    <MESSAGE value="php + paginación final" />
+    <MESSAGE value="conversión a php + agregar cartas a la bases de datos" />
+    <MESSAGE value="footer.php acabado (falta flexbox),  Equipo Desarrollo (acabado, rellenar datos), Añadir Carta (acabado), reseñas (acabado, bugs movil flexbox), Cartas (por finalizar), Nosotros (acabado, agregar contenido nuevo), Inicio (acabado, actualizar pantalla)" />
+    <MESSAGE value="Añadir favicon (todos los dispositivos)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadir favicon (todos los dispositivos)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="712" y="329" key="#Images" timestamp="1611323260966">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="712" y="329" key="#Images/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611323260966" />
+    <state x="586" y="198" key="#Inspections" timestamp="1611251069193">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="586" y="198" key="#Inspections/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611251069193" />
+    <state x="805" y="204" key="#PHP" timestamp="1611252393167">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="805" y="204" key="#PHP/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611252393167" />
+    <state x="552" y="178" width="1092" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611308316860">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" width="1092" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611308316860" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1611251552377">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611251552377" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1611581564189">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611581564189" />
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom" timestamp="1611534304555">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611533869237" />
+    <state width="1877" height="253" key="GridCell.Tab.0.center" timestamp="1611534304555">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
+    <state width="1877" height="269" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611533869237" />
+    <state width="1877" height="253" key="GridCell.Tab.0.left" timestamp="1611534304555">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611533869237" />
+    <state width="1877" height="253" key="GridCell.Tab.0.right" timestamp="1611534304555">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611533869237" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1611251863909">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611251863909" />
+    <state x="760" y="243" key="NewPhpClassDialog" timestamp="1611505944644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="760" y="243" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611505944644" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1611506272212">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611506272212" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1611318455969">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611318455969" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1611581489288">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611581489288" />
+    <state x="803" y="293" width="698" height="531" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1611514475368">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="803" y="293" width="698" height="531" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611514475368" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611533549318">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611533549318" />
+    <state x="740" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611581422904">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611581422904" />
+  </component>
+</project>
