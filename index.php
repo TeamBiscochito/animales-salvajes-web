@@ -93,6 +93,7 @@ if (isset($_POST['submit'])) {
         }
     }
 }
+//header("Location: localhost:63342/pruebagitweb/index.php#slide-5");
 
 function corregir() {
 
