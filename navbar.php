@@ -17,7 +17,7 @@
                 <li><a href="#slide-2">Nosotros</a></li>
                 <li><a href="#slide-3">Cartas</a></li>
                 <li><a href="#slide-4">Reseñas</a></li>
-                <li><a href="#slide-5">Prices</a></li>
+                <li><a href="#slide-5">Añadir carta</a></li>
                 <li><a href="#slide-6">Contáctanos</a></li>
             </ul>
         </div><!--/.nav-collapse -->

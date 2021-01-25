@@ -13,20 +13,19 @@ $corregir = false;
 $mensajeError = "";
 $error = 1;
 
-$nombre = $_POST['nombre'];
-$altura = $_POST['altura'];
-$peso = $_POST['peso'];
-$longitud = $_POST['longitud'];
-$velocidad = $_POST['velocidad'];
-$poder = $_POST['poder'];
-$img = $_FILES['imganimal']['name'];
-$alturamag = $_POST['alturamag'];
-$pesomag = $_POST['pesomag'];
-$longitudmag = $_POST['longitudmag'];
-$velocidadmag = $_POST['velocidadmag'];
-$descripcion = $_POST['mensaje'];
-
-if (isset($_POST['validar'])) {
+if (isset($_POST['submit'])) {
+    $nombre = $_POST['nombre'];
+    $altura = $_POST['altura'];
+    $peso = $_POST['peso'];
+    $longitud = $_POST['longitud'];
+    $velocidad = $_POST['velocidad'];
+    $poder = $_POST['poder'];
+    $img = $_FILES['imganimal']['name'];
+    $alturamag = $_POST['alturamag'];
+    $pesomag = $_POST['pesomag'];
+    $longitudmag = $_POST['longitudmag'];
+    $velocidadmag = $_POST['velocidadmag'];
+    $descripcion = $_POST['mensaje'];
 
     if (empty($nombre) || $nombre == "Nombre de la carta / Elefante *" || empty($altura) || $altura == "Altura *" ||
         empty($peso) || $peso == "Peso *" || empty($longitud) || $longitud == "Longitud *" ||
@@ -51,48 +50,46 @@ if (isset($_POST['validar'])) {
         $corregir = false;
         //        echo "<span class='error'>El poder debe ser un valor comprendido entre 0 y 10</span>";
     } else {
-        $mensajeError = "Todos los parámetros están correctos";
+        if ($descripcion == "Escriba una pequeña descripción de no más de 300 caracteres") {
+            $descripcion = "Esta carta no contiene descripción";
+        }
+        $mensajeError = "La carta se ha subido satisfactoriamente";
         $error = 0;
-        if (isset($_POST['submit'])) {
-            if ($descripcion == "Escriba una pequeña descripción de no más de 300 caracteres...") {
-                $descripcion = "No se ha proporcionado una descripción";
-            }
 
-            $sql = "insert into carta values(null, :nombre, :descripcion, :imagen )";
-            $stmt = $con->prepare($sql);
+        $sql = "insert into carta values(null, :nombre, :descripcion, :imagen )";
+        $stmt = $con->prepare($sql);
 
-            $stmt->execute(array(":nombre" => $nombre, ":descripcion" => $descripcion, ":imagen" => $img));
+        $stmt->execute(array(":nombre" => $nombre, ":descripcion" => $descripcion, ":imagen" => $img));
 
 
-            $query = "select id from carta where nombre = :nombre";
-            $st = $con->prepare($query);
-            $st->execute(array(":nombre" => $nombre));
-            $rs = $st->fetch(PDO::FETCH_ASSOC);
-            $id = $rs['id'];
-            //Altura
-            $sql = "insert into pregunta values(null, :idcarta, :pregunta, :respuesta, :magnitud  ) ";
-            $stmt = $con->prepare($sql);
-            $stmt->execute(array(":idcarta" => $id, ":pregunta" => 'altura', ":respuesta" => $altura, ":magnitud" => $alturamag));
-            //Peso
-            $sql = "insert into pregunta values(null, :idcarta, :pregunta, :respuesta, :magnitud ) ";
-            $stmt = $con->prepare($sql);
-            $stmt->execute(array(":idcarta" => $id, ":pregunta" => 'peso', ":respuesta" => $peso, ":magnitud" => $pesomag));
-            //Longitud
-            $sql = "insert into pregunta values(null, :idcarta, :pregunta, :respuesta, :magnitud ) ";
-            $stmt = $con->prepare($sql);
-            $stmt->execute(array(":idcarta" => $id, ":pregunta" => 'longitud', ":respuesta" => $longitud, ":magnitud" => $longitudmag));
-            //Velocidad
-            $sql = "insert into pregunta values(null, :idcarta, :pregunta, :respuesta, :magnitud ) ";
-            $stmt = $con->prepare($sql);
-            $stmt->execute(array(":idcarta" => $id, ":pregunta" => 'velocidad', ":respuesta" => $velocidad, ":magnitud" => $velocidadmag));
-            //Poder
-            $sql = "insert into pregunta values(null, :idcarta, :pregunta, :respuesta, :magnitud  ) ";
-            $stmt = $con->prepare($sql);
-            $stmt->execute(array(":idcarta" => $id, ":pregunta" => 'poder', ":respuesta" => $poder, ":magnitud" => ""));
+        $query = "select id from carta where nombre = :nombre";
+        $st = $con->prepare($query);
+        $st->execute(array(":nombre" => $nombre));
+        $rs = $st->fetch(PDO::FETCH_ASSOC);
+        $id = $rs['id'];
+        //Altura
+        $sql = "insert into pregunta values(null, :idcarta, :pregunta, :respuesta, :magnitud  ) ";
+        $stmt = $con->prepare($sql);
+        $stmt->execute(array(":idcarta" => $id, ":pregunta" => 'altura', ":respuesta" => $altura, ":magnitud" => $alturamag));
+        //Peso
+        $sql = "insert into pregunta values(null, :idcarta, :pregunta, :respuesta, :magnitud ) ";
+        $stmt = $con->prepare($sql);
+        $stmt->execute(array(":idcarta" => $id, ":pregunta" => 'peso', ":respuesta" => $peso, ":magnitud" => $pesomag));
+        //Longitud
+        $sql = "insert into pregunta values(null, :idcarta, :pregunta, :respuesta, :magnitud ) ";
+        $stmt = $con->prepare($sql);
+        $stmt->execute(array(":idcarta" => $id, ":pregunta" => 'longitud', ":respuesta" => $longitud, ":magnitud" => $longitudmag));
+        //Velocidad
+        $sql = "insert into pregunta values(null, :idcarta, :pregunta, :respuesta, :magnitud ) ";
+        $stmt = $con->prepare($sql);
+        $stmt->execute(array(":idcarta" => $id, ":pregunta" => 'velocidad', ":respuesta" => $velocidad, ":magnitud" => $velocidadmag));
+        //Poder
+        $sql = "insert into pregunta values(null, :idcarta, :pregunta, :respuesta, :magnitud  ) ";
+        $stmt = $con->prepare($sql);
+        $stmt->execute(array(":idcarta" => $id, ":pregunta" => 'poder', ":respuesta" => $poder, ":magnitud" => ""));
 
-            if ((move_uploaded_file($_FILES['imganimal']['tmp_name'], "img/" . $img))) {
-
-            }
+        if ((move_uploaded_file($_FILES['imganimal']['tmp_name'], "img/" . $img))) {
+            echo "correcto";
         }
     }
 }
@@ -104,7 +101,7 @@ function corregir() {
 
 ?>
     <!-- Ban -->
-    <div class="slide story" id="slide-1">
+    <div class="slide story" id="slide-1" xmlns="http://www.w3.org/1999/html">
         <div id="content">
             <div id="slider">
                 <img src="images/newImages/wallpaper2.jpg" alt="Animales" data-url="#">
@@ -190,154 +187,154 @@ function corregir() {
                     <ul class="portfolio-items">
                         <li class="item">
                             <figure>
-                                <div class="view"><img src="images/work1.jpg"/></div>
+                                <div class="view"><img src="images/newImages/teambiscochito.jpg"/></div>
                                 <figcaption>
-                                    <p><span><a href="#0">Passion For Birds.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
+                                    <p><span><a href="#0">Inicio de proyecto</a></span></p>
+                                    <p><span>Reunión de miembros</span></p>
                                 </figcaption>
                             </figure>
-                            <div class="date">2010</div>
+                            <div class="date" style="width: 30%">2020-12-04</div>
                         </li>
                         <li class="item">
                             <figure>
-                                <div class="view"><img src="images/work2.jpg"/></div>
+                                <div class="view"><img src="images/newImages/grupo.jpg"/></div>
                                 <figcaption>
-                                    <p><span><a href="#0">Everyone's Favourite Birds.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
+                                    <p><span><a href="#0">Reunión de grupo</a></span></p>
+                                    <p><span>Grupo completo</span></p>
                                 </figcaption>
                             </figure>
-                            <div class="date">2011</div>
+                            <div class="date" style="width: 30%">2020-12-15</div>
                         </li>
                         <li class="item">
                             <figure>
-                                <div class="view"><img src="images/work3.jpg"/></div>
+                                <div class="view"><img src="images/newImages/ourWork2.png"/></div>
                                 <figcaption>
-                                    <p><span><a href="#0">Birds For a Better Future.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
+                                    <p><span><a href="https://github.com/TeamBiscochito" target="_blank">Inicio de App / Repositorio</a></span></p>
+                                    <p><span>Team Biscochito</span></p>
                                 </figcaption>
                             </figure>
-                            <div class="date">2012</div>
+                            <div class="date" style="width: 30%">2020-12-30</div>
                         </li>
                         <li class="item">
                             <figure>
-                                <div class="view"><img src="images/work4.jpg"/></div>
+                                <div class="view"><img src="images/newImages/ourWork3.png"/></div>
                                 <figcaption>
-                                    <p><span><a href="#0">Birds - To Feel Free.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
+                                    <p><span><a href="https://github.com/TeamBiscochito/proyectofinal/releases/tag/v0.0.1" target="_blank">Primera versión v0.0.1</a></span></p>
+                                    <p><span>Animales Salvajes</span></p>
                                 </figcaption>
                             </figure>
-                            <div class="date">2013</div>
+                            <div class="date" style="width: 30%">2021-01-13</div>
                         </li>
                         <li class="item">
                             <figure>
-                                <div class="view"><img src="images/work5.jpg"/></div>
+                                <div class="view"><img src="images/newImages/ourWork4.png"/></div>
                                 <figcaption>
-                                    <p><span><a href="#0">Birds For You.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
+                                    <p><span><a href="https://github.com/TeamBiscochito/proyectofinal/releases/tag/v0.0.2" target="_blank">Segunda versión v0.0.2</a></span></p>
+                                    <p><span>Animales Salvajes</span></p>
                                 </figcaption>
                             </figure>
-                            <div class="date">2014</div>
+                            <div class="date" style="width: 30%">2021-01-15</div>
                         </li>
-                        <li class="item">
-                            <figure>
-                                <div class="view"><img src="images/work6.jpg"/></div>
-                                <figcaption>
-                                    <p><span><a href="#0">Go Far With Birds.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
-                                </figcaption>
-                            </figure>
-                            <div class="date">2015</div>
-                        </li>
-                        <li class="item">
-                            <figure>
-                                <div class="view"><img src="images/work7.jpg"/></div>
-                                <figcaption>
-                                    <p><span><a href="#0">Birds For Me.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
-                                </figcaption>
-                            </figure>
-                            <div class="date">2016</div>
-                        </li>
-                        <li class="item">
-                            <figure>
-                                <div class="view"><img src="images/work8.jpg"/></div>
-                                <figcaption>
-                                    <p><span><a href="#0">Birds - Enjoy The Difference.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
-                                </figcaption>
-                            </figure>
-                            <div class="date">2017</div>
-                        </li>
-                        <li class="item">
-                            <figure>
-                                <div class="view"><img src="images/work9.jpg"/></div>
-                                <figcaption>
-                                    <p><span><a href="#0">Try Birds You'll Like It.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
-                                </figcaption>
-                            </figure>
-                            <div class="date">2018</div>
-                        </li>
-                        <li class="item">
-                            <figure>
-                                <div class="view"><img src="images/work10.jpg"/></div>
-                                <figcaption>
-                                    <p><span><a href="#0">Birds, Take Me Away.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
-                                </figcaption>
-                            </figure>
-                            <div class="date">2019</div>
-                        </li>
-                        <li class="item">
-                            <figure>
-                                <div class="view"><img src="images/work11.jpg"/></div>
-                                <figcaption>
-                                    <p><span><a href="#0">Most Exellent Birds</a></span></p>
-                                    <p><span>By Ornithology</span></p>
-                                </figcaption>
-                            </figure>
-                            <div class="date">2020</div>
-                        </li>
-                        <li class="item">
-                            <figure>
-                                <div class="view"><img src="images/work12.jpg"/></div>
-                                <figcaption>
-                                    <p><span><a href="#0">All Birds, All the Time.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
-                                </figcaption>
-                            </figure>
-                            <div class="date">2021</div>
-                        </li>
-                        <li class="item">
-                            <figure>
-                                <div class="view"><img src="images/work13.jpg"/></div>
-                                <figcaption>
-                                    <p><span><a href="#0">Birds For Your Life.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
-                                </figcaption>
-                            </figure>
-                            <div class="date">2022</div>
-                        </li>
-                        <li class="item">
-                            <figure>
-                                <div class="view"><img src="images/work14.jpg"/></div>
-                                <figcaption>
-                                    <p><span><a href="#0">Life's Beautiful With Birds.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
-                                </figcaption>
-                            </figure>
-                            <div class="date">2023</div>
-                        </li>
-                        <li class="item">
-                            <figure>
-                                <div class="view"><img src="images/work15.jpg"/></div>
-                                <figcaption>
-                                    <p><span><a href="#0">Me And My Birds.</a></span></p>
-                                    <p><span>By Ornithology</span></p>
-                                </figcaption>
-                            </figure>
-                            <div class="date">2024</div>
-                        </li>
+<!--                        <li class="item">-->
+<!--                            <figure>-->
+<!--                                <div class="view"><img src="images/work6.jpg"/></div>-->
+<!--                                <figcaption>-->
+<!--                                    <p><span><a href="#0">Go Far With Birds.</a></span></p>-->
+<!--                                    <p><span>By Ornithology</span></p>-->
+<!--                                </figcaption>-->
+<!--                            </figure>-->
+<!--                            <div class="date">2015</div>-->
+<!--                        </li>-->
+<!--                        <li class="item">-->
+<!--                            <figure>-->
+<!--                                <div class="view"><img src="images/work7.jpg"/></div>-->
+<!--                                <figcaption>-->
+<!--                                    <p><span><a href="#0">Birds For Me.</a></span></p>-->
+<!--                                    <p><span>By Ornithology</span></p>-->
+<!--                                </figcaption>-->
+<!--                            </figure>-->
+<!--                            <div class="date">2016</div>-->
+<!--                        </li>-->
+<!--                        <li class="item">-->
+<!--                            <figure>-->
+<!--                                <div class="view"><img src="images/work8.jpg"/></div>-->
+<!--                                <figcaption>-->
+<!--                                    <p><span><a href="#0">Birds - Enjoy The Difference.</a></span></p>-->
+<!--                                    <p><span>By Ornithology</span></p>-->
+<!--                                </figcaption>-->
+<!--                            </figure>-->
+<!--                            <div class="date">2017</div>-->
+<!--                        </li>-->
+<!--                        <li class="item">-->
+<!--                            <figure>-->
+<!--                                <div class="view"><img src="images/work9.jpg"/></div>-->
+<!--                                <figcaption>-->
+<!--                                    <p><span><a href="#0">Try Birds You'll Like It.</a></span></p>-->
+<!--                                    <p><span>By Ornithology</span></p>-->
+<!--                                </figcaption>-->
+<!--                            </figure>-->
+<!--                            <div class="date">2018</div>-->
+<!--                        </li>-->
+<!--                        <li class="item">-->
+<!--                            <figure>-->
+<!--                                <div class="view"><img src="images/work10.jpg"/></div>-->
+<!--                                <figcaption>-->
+<!--                                    <p><span><a href="#0">Birds, Take Me Away.</a></span></p>-->
+<!--                                    <p><span>By Ornithology</span></p>-->
+<!--                                </figcaption>-->
+<!--                            </figure>-->
+<!--                            <div class="date">2019</div>-->
+<!--                        </li>-->
+<!--                        <li class="item">-->
+<!--                            <figure>-->
+<!--                                <div class="view"><img src="images/work11.jpg"/></div>-->
+<!--                                <figcaption>-->
+<!--                                    <p><span><a href="#0">Most Exellent Birds</a></span></p>-->
+<!--                                    <p><span>By Ornithology</span></p>-->
+<!--                                </figcaption>-->
+<!--                            </figure>-->
+<!--                            <div class="date">2020</div>-->
+<!--                        </li>-->
+<!--                        <li class="item">-->
+<!--                            <figure>-->
+<!--                                <div class="view"><img src="images/work12.jpg"/></div>-->
+<!--                                <figcaption>-->
+<!--                                    <p><span><a href="#0">All Birds, All the Time.</a></span></p>-->
+<!--                                    <p><span>By Ornithology</span></p>-->
+<!--                                </figcaption>-->
+<!--                            </figure>-->
+<!--                            <div class="date">2021</div>-->
+<!--                        </li>-->
+<!--                        <li class="item">-->
+<!--                            <figure>-->
+<!--                                <div class="view"><img src="images/work13.jpg"/></div>-->
+<!--                                <figcaption>-->
+<!--                                    <p><span><a href="#0">Birds For Your Life.</a></span></p>-->
+<!--                                    <p><span>By Ornithology</span></p>-->
+<!--                                </figcaption>-->
+<!--                            </figure>-->
+<!--                            <div class="date">2022</div>-->
+<!--                        </li>-->
+<!--                        <li class="item">-->
+<!--                            <figure>-->
+<!--                                <div class="view"><img src="images/work14.jpg"/></div>-->
+<!--                                <figcaption>-->
+<!--                                    <p><span><a href="#0">Life's Beautiful With Birds.</a></span></p>-->
+<!--                                    <p><span>By Ornithology</span></p>-->
+<!--                                </figcaption>-->
+<!--                            </figure>-->
+<!--                            <div class="date">2023</div>-->
+<!--                        </li>-->
+<!--                        <li class="item">-->
+<!--                            <figure>-->
+<!--                                <div class="view"><img src="images/work15.jpg"/></div>-->
+<!--                                <figcaption>-->
+<!--                                    <p><span><a href="#0">Me And My Birds.</a></span></p>-->
+<!--                                    <p><span>By Ornithology</span></p>-->
+<!--                                </figcaption>-->
+<!--                            </figure>-->
+<!--                            <div class="date">2024</div>-->
+<!--                        </li>-->
                     </ul>
                 </div>
             </div><!-- /container -->
@@ -347,12 +344,11 @@ function corregir() {
     <!-- === SLide 3 - Portfolio -->
     <div class="slide story" id="slide-3" data-slide="3">
         <section class="gallery slideanim">
-            <h3 class="text-center slideanim">Our Gallery</h3>
+            <h3 class="text-center slideanim">Nuestra galería de cartas</h3>
             <div class="container">
                 <hr>
             </div>
-            <p class="text-center slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.</p>
+            <p class="text-center slideanim">Conjunto de todas las cartas que poseemos actualmente</p>
             <div class="container">
                 <div class="im_wrapper">
                     <div><img src="images/1.jpg" class="img-responsive" alt=""/></div>
@@ -539,7 +535,6 @@ function corregir() {
                                         de la carta<span class="shipping" style="margin: 0;"> </span></h4>
                                     <ul style="display: flex;justify-content: center;">
                                         <li style="width: 100%;display: flex;justify-content: center;"><input
-                                                    required="required"
                                                     class="text-box-dark" type="text" name="nombre"
                                                     value="Nombre de la carta / Elefante *"
                                                     onfocus="if (this.value == 'Nombre de la carta / Elefante *') {this.value = ''}"
@@ -548,7 +543,6 @@ function corregir() {
                                     </ul>
                                     <ul style="display: flex;justify-content: space-around;">
                                         <li style="display: flex;width: 100%;justify-content: space-around;"><input
-                                                    required="required"
                                                     class="text-box-dark" type="text" name="altura" value="Altura *"
                                                     onfocus="if (this.value == 'Altura *') {this.value = ''}"
                                                     onblur="if (this.value == '') {this.value = 'Altura *';}"
@@ -564,7 +558,6 @@ function corregir() {
 
                                     <ul style="display: flex;justify-content: space-around;">
                                         <li style="display: flex;width: 100%;justify-content: space-around;"><input
-                                                    required="required"
                                                     class="text-box-dark" type="text" name="peso" value="Peso *"
                                                     onfocus="if (this.value == 'Peso *') {this.value = ''}"
                                                     onblur="if (this.value == '') {this.value = 'Peso *';}"
@@ -581,7 +574,6 @@ function corregir() {
 
                                     <ul style="display: flex;justify-content: space-around;">
                                         <li style="display: flex;width: 100%;justify-content: space-around;"><input
-                                                    required="required"
                                                     class="text-box-dark" type="text" name="longitud" value="Longitud *"
                                                     onfocus="if (this.value == 'Longitud *') {this.value = ''}"
                                                     onblur="if (this.value == '') {this.value = 'Longitud *';}"
@@ -597,7 +589,6 @@ function corregir() {
 
                                     <ul style="display: flex;justify-content: space-around;">
                                         <li style="display: flex;width: 100%;justify-content: space-around;"><input
-                                                    required="required"
                                                     class="text-box-dark" type="text" name="velocidad"
                                                     value="Velocidad *"
                                                     onfocus="if (this.value == 'Velocidad *') {this.value = ''}"
@@ -624,9 +615,9 @@ function corregir() {
                                     <ul style="display: flex;  align-items: center;  justify-content: center; flex-direction: column">
                                         <li style="width: 100%;display: flex;justify-content: center;">
                                             <textarea class="text-box-dark" name="mensaje" maxlength="300" id="mensaje"
-                                                      value="Escriba una pequeña descripción de no más de 300 caracteres..."
-                                                      onfocus="if (this.value == 'Escriba una pequeña descripción de no más de 300 caracteres...') {this.value = ''}"
-                                                      onblur="if (this.value == '') {this.value = 'Escriba una pequeña descripción de no más de 300 caracteres...';}"
+                                                      value="Escriba una pequeña descripción de no más de 300 caracteres"
+                                                      onfocus="if (this.value == 'Escriba una pequeña descripción de no más de 300 caracteres') {this.value = ''}"
+                                                      onblur="if (this.value == '') {this.value = 'Escriba una pequeña descripción de no más de 300 caracteres';}"
                                                       style="margin: 0px; width: 100%; text-align: justify; max-height: 140px; min-height: 40px; resize: vertical; line-height: 22px; height: 60px; padding: 1%;">Escriba una pequeña descripción de no más de 300 caracteres</textarea>
                                         </li>
                                         <li style="display: flex;width: 20%;justify-content: space-around;">
@@ -676,11 +667,11 @@ function corregir() {
                                             <!--                                            <a href="#small-dialog" class="order" style="margin: 0;width: 100%;">Añadir carta</a>-->
                                         </li>
                                     </ul>
-<!--                                    <ul class="payment-sendbtns" style="float: none;display: flex;">-->
-<!--                                        <li style="width: 100%;">-->
-<!--                                            <input type="button" value="Validar todos los campos" id="validar"-->
-<!--                                                   style="margin: 0;width: 100%;"></li>-->
-<!--                                    </ul>-->
+                                    <!--                                    <ul class="payment-sendbtns" style="float: none;display: flex;">-->
+                                    <!--                                        <li style="width: 100%;">-->
+                                    <!--                                            <input type="button" value="Validar todos los campos" id="validar"-->
+                                    <!--                                                   style="margin: 0;width: 100%;"></li>-->
+                                    <!--                                    </ul>-->
 
                                     <script>
                                         function init() {
@@ -714,99 +705,92 @@ function corregir() {
     <!-- /Pricing Tables -->
     <!-- Our History -->
     <section class="history slideanim">
-        <h3 class="text-center slideanim">Our History</h3>
+        <h3 class="text-center slideanim">Nuestro equipo de desarrollo</h3>
         <div class="container">
             <hr>
         </div>
-        <p class="text-center slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p class="text-center slideanim">Descripción de lo que hace cada uno de los integrantes de nuestro proyecto
+            <strong>"Animales Salvajes"</strong></p>
         <div class="container">
             <section class="tabs slideanim">
                 <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked"/>
-                <label for="tab-1" class="tab-label-1">2010</label>
+                <label for="tab-1" class="tab-label-1">Gabriel</label>
 
                 <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2"/>
-                <label for="tab-2" class="tab-label-2">2011</label>
+                <label for="tab-2" class="tab-label-2">Manuel</label>
 
                 <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3"/>
-                <label for="tab-3" class="tab-label-3">2012</label>
+                <label for="tab-3" class="tab-label-3">Oleg</label>
 
                 <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4"/>
-                <label for="tab-4" class="tab-label-4">2013</label>
+                <label for="tab-4" class="tab-label-4">Pablo</label>
 
                 <div class="clear-shadow"></div>
 
                 <div class="content">
                     <div class="content-1">
-                        <h3 class="his1">OUR BEGINNING</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s. </p>
-                        <h3 class="his2">HOW WE WORK</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book.</p>
+                        <h3 class="his1">GABRIEL GUERRERO EXPÓSITO</h3>
+                        <p>Tercer integrante del proyecto, para animales salvajes. Estudia en IES Zaidín Vergeles, Grado
+                            Superior en Técnico Superior en Desarrollo de Aplicaciones Multiplataforma.</p>
+                        <h3 class="his2">TRABAJO REALIZADO</h3>
+                        <p>Departamento de código. Broadcast implementado (más adelante mejorado). Componente de
+                            navegación y fragmentos creados. Preferencias compartidas + RecyclerView y Adapter. Laravel
+                            JSON + paginación.</p>
                     </div>
                     <div class="content-2">
-                        <h3 class="his1">OUR WORK</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book.</p>
-                        <h3 class="his2">OUR EXELLENCE</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic typesetting, remaining essentially
-                            unchanged.</p>
+                        <h3 class="his1">MANUEL GARCÍA ARQUELLADAS</h3>
+                        <p>Cuarto integrante del proyecto, para animales salvajes. Estudia en IES Zaidín Vergeles, Grado
+                            Superior en Técnico Superior en Desarrollo de Aplicaciones Multiplataforma.</p>
+                        <h3 class="his2">TRABAJO REALIZADO</h3>
+                        <p>Departamento de diseño y programación de navegación. Creación del menú inicial del juego.
+                            Añade créditos. Fragmentos generales modificados. Fragmentos de jugador + música +
+                            animaciones. Fragmento correo añadido.</p>
                     </div>
                     <div class="content-3">
-                        <h3 class="his1">OUR DEDICATION</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic typesetting, remaining essentially
-                            unchanged.</p>
-                        <h3 class="his2">OUR HARDWORK</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book.</p>
+                        <h3 class="his1">OLEG FERÁNDEZ-LLEBREZ RODRÍGUEZ</h3>
+                        <p>Segundo integrante del proyecto, para animales salvajes. Estudia en IES Zaidín Vergeles,
+                            Grado
+                            Superior en Técnico Superior en Desarrollo de Aplicaciones Multiplataforma.</p>
+                        <h3 class="his2">TRABAJO REALIZADO</h3>
+                        <p>Departamento de diseño y web. Creación del repositorio de Github (Wiki, y Github-Web).
+                            Mejoras en el diseño de fragmentos. Creación de Portrait (7"). Cambios en XML. Creación de
+                            página Web.</p>
                     </div>
                     <div class="content-4">
-                        <h3 class="his1">OUR STRATEGY</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book.</p>
-                        <h3 class="his2">OUR CONSISTENCY</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic typesetting, remaining essentially
-                            unchanged.</p>
+                        <h3 class="his1">PABLO JAVIER JÁIMEZ COBOS</h3>
+                        <p>Tercer integrante del proyecto, para animales salvajes. Estudia en IES Zaidín Vergeles, Grado
+                            Superior en Técnico Superior en Desarrollo de Aplicaciones Multiplataforma.</p>
+                        <h3 class="his2">TRABAJO REALIZADO</h3>
+                        <p>Departamento de código. Creación del primer commit. Creación de Room. Creación de repositorio
+                            + LiveData. Base de datos inicializada y estructura modificada para un mejor acceso.
+                            Estructura del juego.</p>
                     </div>
                 </div>
             </section>
         </div>
     </section>
     <!-- /Our History -->
-    <section class="map">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 slideanim">
-                    <iframe class="googlemaps"
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12718.565692904409!2d-3.5911843!3d37.1612249!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5cc395f96e47c0d9!2sIES%20Zaid%C3%ADn%20Vergeles!5e0!3m2!1ses!2ses!4v1611310581574!5m2!1ses!2ses"
-                            style="border:0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--    <section class="map">-->
+    <!--        <div class="container-fluid">-->
+    <!--            <div class="row">-->
+    <!--                <div class="col-lg-12 slideanim">-->
+    <!--                    <iframe class="googlemaps"-->
+    <!--                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12718.565692904409!2d-3.5911843!3d37.1612249!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5cc395f96e47c0d9!2sIES%20Zaid%C3%ADn%20Vergeles!5e0!3m2!1ses!2ses!4v1611310581574!5m2!1ses!2ses"-->
+    <!--                            style="border:0" allowfullscreen></iframe>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </section>-->
     <!-- /google map -->
     <!-- contact section -->
     <div class="slide story" id="slide-6" data-slide="6">
         <section class="our-contacts slideanim" id="contact">
-            <h3 class="slideanim">Contact Us</h3>
+            <h3 class="slideanim">¡ Contacta con nosotros !</h3>
             <div class="container">
                 <hr>
             </div>
-            <p class="text-center slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.</p>
+            <p class="text-center slideanim">Si tienes algún problema en el juego o quieres sugerir algún cambio o
+                añadir cosas a la aplicación, no dudes en contactarnos</p>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 slideanim">
@@ -814,23 +798,24 @@ function corregir() {
                             <div class="row">
                                 <div class="form-group col-lg-4">
                                     <input type="text" name="Name" class="form-control user-name"
-                                           placeholder="Your Name" required/>
+                                           placeholder="Tu nombre" required/>
                                 </div>
                                 <div class="form-group col-lg-4">
-                                    <input type="email" name="Email" class="form-control mail" placeholder="Your Email"
+                                    <input type="email" name="Email" class="form-control mail" placeholder="Tu Correo"
                                            required/>
                                 </div>
                                 <div class="form-group col-lg-4">
                                     <input type="tel" name="Phone" class="form-control pno"
-                                           placeholder="Your Phone Number" required/>
+                                           placeholder="Tu número de teléfono" required/>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="form-group col-lg-12">
-                                    <textarea class="form-control" name="Message" rows="6" placeholder="Your Message"
+                                    <textarea class="form-control" name="Message" rows="6"
+                                              placeholder="Breve descripción de que es lo que propones, quieras mejorar, soluciones..."
                                               required></textarea>
                                 </div>
                                 <div class="form-group col-lg-12">
-                                    <button type="submit" href="#" class="btn-outline">Submit</button>
+                                    <button type="submit" href="#" class="btn-outline">Enviar</button>
                                 </div>
                             </div>
                         </form>
