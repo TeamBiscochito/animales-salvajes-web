@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@1.0.0
       - uses: lannonbr/issue-label-manager-action@2.0.0
         env:
-          GITHUB_TOKEN: ${{ 4ce0484ce0937e96074b3e30c3fb6757cd833b16 }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 # This is a basic workflow to help you get started with Actions
 
 #name: CI
