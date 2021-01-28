@@ -113,7 +113,7 @@
     "name": "Type: Security",
     "color": "FF6DD9",
     "description": "Layer of security level, bug or zero day appears that compromise application functionality "
-  }
+  },
   {
     "name": "Status: Changes Requested",
     "color": "FF6DD9",
