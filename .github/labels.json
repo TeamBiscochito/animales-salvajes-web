@@ -1,17 +1,17 @@
 [
   {
     "name": "Type: Help Needed",
-    "color": "5319e7",
-    "description": "Attention is needed"
+    "description": "Attention is needed",
+    "color": "5319e7"    
   },
   {
     "name": "Priority: Critical",
-    "color": "ff2222",
-    "description": "Critical, needs to check quickly"
+    "description": "Critical, needs to check quickly",
+    "color": "ff2222" 
   },
   {
     "name": "Wontfix",
-    "color": "ffffff",
-    "description": "This will not be worked on"
+    "description": "This will not be worked on",
+    "color": "ffffff"
   }
 ]
