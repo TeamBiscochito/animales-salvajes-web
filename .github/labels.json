@@ -63,4 +63,49 @@
     "name": "Type: Question",
     "color": "FF6DD9"
   }
+  {
+    "name": "Bug",
+    "color": "B60205",
+    "description": "Something isn't working"
+  }
+  {
+    "name": "Documentation",
+    "color": "0075ca",
+    "description": "Improvements or additions to documentation"
+  }
+    {
+    "name": "Duplicate",
+    "color": "cfd3d7",
+    "description": "This issue or pull request already exists"
+  }
+    {
+    "name": "Enhancement",
+    "color": "a2eeef",
+    "description": "New feature or request"
+  }
+  {
+    "name": "Help wanted",
+    "color": "008672",
+    "description": "Extra attention is needed"
+  }
+  {
+    "name": "Invalid",
+    "color": "e4e669",
+    "description": "This doesn't seem right"
+  }
+  {
+    "name": "Question",
+    "color": "d876e3",
+    "description": "Further information is requested"
+  }
+  {
+    "name": "Stopped",
+    "color": "d876e3",
+    "description": "This feature is stopped or is not going to be implemented now"
+  }
+  {
+    "name": "Wontfix",
+    "color": "ffffff",
+    "description": "This will not be worked on"
+  }  
 ]
