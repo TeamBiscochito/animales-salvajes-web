@@ -2,13 +2,10 @@ on: issues
 name: Create Default Labels
 jobs:
   labels:
-    name: DefaultLabelsActions
+    name: GitHub Labeler
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@1.0.0
-      - uses: lannonbr/issue-label-manager-action@2.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: crazy-max/ghaction-github-labeler@v3.1.1
 # This is a basic workflow to help you get started with Actions
 
 #name: CI
