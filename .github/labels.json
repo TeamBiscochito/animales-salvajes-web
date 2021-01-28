@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Type: Help Needed",
+    "color": "5319e7"
+  },
+  {
+    "name": "Priority: Critical",
+    "color": "ff2222"
+  },
+  {
+    "name": "Priority: High",
+    "color": "FF7922"
+  },
+  {
+    "name": "Priority: Low",
+    "color": "c2e0c6"
+  },
+  {
+    "name": "Priority: Medium",
+    "color": "fbca04"
+  },
+  {
+    "name": "Status: Complete",
+    "color": "7ED321"
+  },
+  {
+    "name": "Status: Confirmed",
+    "color": "0e8a16"
+  },
+  {
+    "name": "Status: Feedback Needed",
+    "color": "006b75"
+  },
+  {
+    "name": "Status: In Progress",
+    "color": "FC8264"
+  },
+  {
+    "name": "Status: On Hold",
+    "color": "BABABA"
+  },
+  {
+    "name": "Status: Review Needed",
+    "color": "EAE435"
+  },
+  {
+    "name": "Type: Bug",
+    "color": "ff2222"
+  },
+  {
+    "name": "Type: Enhancement",
+    "color": "1d76db"
+  },
+  {
+    "name": "Type: Feature",
+    "color": "6DFF6D"
+  },
+  {
+    "name": "Type: Idea",
+    "color": "6DE6FF"
+  },
+  {
+    "name": "Type: Question",
+    "color": "FF6DD9"
+  }
+]
