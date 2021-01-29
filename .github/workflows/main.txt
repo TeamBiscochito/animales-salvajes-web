@@ -1,14 +1,14 @@
 on: issues
 name: Create Default Labels
-#jobs:
-#  labels:
-#    name: DefaultLabelsActions
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v2
-#      - uses: lannonbr/issue-label-manager-action@2.0.0
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+jobs:
+  labels:
+    name: DefaultLabelsActions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: lannonbr/issue-label-manager-action@2.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 # This is a basic workflow to help you get started with Actions
 
