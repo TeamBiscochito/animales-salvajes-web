@@ -22,7 +22,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="Añadir favicon (todos los dispositivos)" />
+    <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="Añadir favicon (todos los dispositivos)">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/newImages/favicon/favicon_2.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginacion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85cd4c81-f418-49b7-800d-1c4f8049cd31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/85cd4c81-f418-49b7-800d-1c4f8049cd31.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pruebagitweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pruebagitweb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/js/validacion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/newImages/ourWork.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/newImages/ourWork.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/newImages/ourWork5.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/newImages/ourWork5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/newImages/ourWork6.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/newImages/ourWork6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +45,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -39,6 +61,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1nO9uCubK2OpL1AI2oMDDkEFqE9" />
   <component name="ProjectViewState">
@@ -49,14 +72,15 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last.edited.regexp" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/archivos php" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Keyster\Desktop\pruebagitweb\archivos php\img" />
       <recent name="C:\Users\Keyster\Desktop\pruebagitweb\archivos php" />
+      <recent name="C:\Users\Keyster\Desktop\pruebagitweb\archivos php\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -75,6 +99,7 @@
       <workItem from="1611250491890" duration="16163000" />
       <workItem from="1611317771496" duration="63263000" />
       <workItem from="1611581369574" duration="197000" />
+      <workItem from="1611962800902" duration="31917000" />
     </task>
     <task id="LOCAL-00001" summary="estilos modificados y ordenados (fallos)">
       <created>1611251332963</created>
@@ -167,66 +192,90 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="805" y="204" key="#PHP/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611252393167" />
+    <state x="336" y="361" key="#SQL_Dialects" timestamp="1611912888018">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="336" y="361" key="#SQL_Dialects/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611912888018" />
+    <state x="400" y="376" key="#SQL_Resolution_Scopes" timestamp="1611913250283">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="400" y="376" key="#SQL_Resolution_Scopes/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611913250283" />
     <state x="552" y="178" width="1092" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611308316860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" width="1092" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611308316860" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611910792623">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611910792623" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1611251552377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611251552377" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1611581564189">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1611909005982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611581564189" />
-    <state width="1877" height="253" key="GridCell.Tab.0.bottom" timestamp="1611534304555">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611909005982" />
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom" timestamp="1612034105012">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
-    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611533869237" />
-    <state width="1877" height="253" key="GridCell.Tab.0.center" timestamp="1611534304555">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
-    <state width="1877" height="269" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611533869237" />
-    <state width="1877" height="253" key="GridCell.Tab.0.left" timestamp="1611534304555">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
-    <state width="1877" height="269" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611533869237" />
-    <state width="1877" height="253" key="GridCell.Tab.0.right" timestamp="1611534304555">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
-    <state width="1877" height="269" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611533869237" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1611251863909">
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612034105012" />
+    <state width="1877" height="253" key="GridCell.Tab.0.center" timestamp="1612034105012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611251863909" />
+    <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
+    <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612034105012" />
+    <state width="1877" height="253" key="GridCell.Tab.0.left" timestamp="1612034105012">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
+    <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612034105012" />
+    <state width="1877" height="253" key="GridCell.Tab.0.right" timestamp="1612034105012">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
+    <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612034105012" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1611913024215">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611913024215" />
     <state x="760" y="243" key="NewPhpClassDialog" timestamp="1611505944644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="760" y="243" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611505944644" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1611506272212">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1611967926612">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611506272212" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611967926612" />
+    <state x="697" y="222" key="RollbackChangesDialog" timestamp="1612045571520">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="697" y="222" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612045571520" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1611318455969">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611318455969" />
+    <state width="263" height="441" key="SqlResolveConfigurable" timestamp="1611913243977">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="263" height="441" key="SqlResolveConfigurable/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611913243977" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1611581489288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611581489288" />
-    <state x="803" y="293" width="698" height="531" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1611514475368">
+    <state x="859" y="436" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1611913085979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="803" y="293" width="698" height="531" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611514475368" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611533549318">
+    <state x="859" y="436" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611913085979" />
+    <state x="803" y="293" width="698" height="531" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1611913211997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611533549318" />
+    <state x="803" y="293" width="698" height="531" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611913211997" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611905742199">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611905742199" />
     <state x="740" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611581422904">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

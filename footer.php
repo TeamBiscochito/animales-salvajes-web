@@ -3,7 +3,7 @@
     <div class="container">
         <div class="col-lg-3 col-sm-6">
             <div class="footer-about">
-                <h3 style="text-align: center">Sobre nosotros</h3>
+                <h3 style="text-align: center; color:lime">Sobre nosotros</h3>
                 <p style="text-align: justify">Somos un pequeño grupo de clase en el que nos hemos juntado para empezar
                     este pequeño proyecto sobre
                     cartas (Top Trumps), para que los niños se diviertan con nuestra gran aplicación que es gratis.</p>
@@ -12,7 +12,7 @@
         </div>
         <div class="col-lg-3 col-sm-6">
             <div class="footer-nav">
-                <h3 style="text-align: center">¡ Navega !</h3>
+                <h3 style="text-align: center; color:lime">¡ Navega !</h3>
                 <ul class="links"
                     style="display: flex;flex-direction: column;justify-content: center;align-content: center;align-items: center;margin: 0 auto;">
                     <li>
@@ -38,7 +38,7 @@
         <div class="col-lg-3 col-sm-6"
              style="height: 301px;display: flex;align-content: center;justify-content: center;align-items: center;">
             <div class="footer-nav" style="height: 100%;display: flex;flex-direction: column;">
-                <h3 style="text-align: center">¡ Información !</h3>
+                <h3 style="text-align: center; color:lime">¡ Información !</h3>
                 <ul class="links"
                     style="display: flex;flex-direction: column;justify-content: space-between;align-content: center;align-items: center;height: 100%;margin: 0 auto;">
                     <li style="padding: 0;display: flex;">
@@ -67,32 +67,10 @@
                     </li>
                 </ul>
             </div>
-            <!--            <div class="footer-address">-->
-            <!--                <h3 style="text-align: center">Información</h3>-->
-            <!--                <div class="contact-info">-->
-            <!--                    <div class="address">-->
-            <!--                        <i class="icon icon-globe"></i>-->
-            <!--                        <p class="p3">21 Calle Biscocho</p>-->
-            <!--                        <p class="p4">Granada, ESP</p>-->
-            <!--                        <i class="icon icon-globe"></i>-->
-            <!--                    </div>-->
-            <!--                    <div class="phone">-->
-            <!--                        <i class="icon icon-phone"></i>-->
-            <!--                        <p class="p3">+34 712 123 321</p>-->
-            <!--                        <p class="p4">+34 600 110 101</p>-->
-            <!--                        <i class="icon icon-phone"></i>-->
-            <!--                    </div>-->
-            <!--                    <div class="email-info">-->
-            <!--                        <i class="icon icon-envelope"></i>-->
-            <!--                        <p class="mail"><a href="mailto:myemail@example.com">help@TeamBiscochito.com</a></p>-->
-            <!--                        <i class="icon icon-envelope"></i>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
         </div>
         <div class="col-lg-3 col-sm-6">
             <div class="footer-gallery">
-                <h3 style="text-align: center">Cartas recientes</h3>
+                <h3 style="text-align: center; color:lime">Cartas recientes</h3>
                 <div id="photoGallery-container"
                      style="margin: 0 auto;display: flex;flex-wrap: wrap;justify-content: center;">
 
@@ -130,7 +108,7 @@
             <div class="col-lg-12">
                 <div class="copyright">
                     <p class="text-center">© 2021 Animales Salvajes. Todos los derechos reservados | Design by <a
-                                href="https://github.com/TeamBiscochito" target="_blank">Team Biscochito</a></p>
+                                href="https://github.com/TeamBiscochito" target="_blank" style="color: cyan">Team Biscochito</a></p>
                 </div>
             </div>
         </div>

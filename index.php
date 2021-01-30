@@ -27,28 +27,39 @@ if (isset($_POST['submit'])) {
     $velocidadmag = $_POST['velocidadmag'];
     $descripcion = $_POST['mensaje'];
 
-    if (empty($nombre) || $nombre == "Nombre de la carta / Elefante *" || empty($altura) || $altura == "Altura *" ||
+    $q = "select * from carta where nombre = :nombre";
+    $s = $con->prepare($q);
+    $s->execute(array("nombre" => $nombre));
+
+    if (empty($nombre) || $nombre == "Nombre de la carta / Elefante (primera letra mayúscula) *" || empty($altura) || $altura == "Altura *" ||
         empty($peso) || $peso == "Peso *" || empty($longitud) || $longitud == "Longitud *" ||
         empty($velocidad) || $velocidad == "Velocidad *" || empty($poder) || $poder == "Poder mortífero (1-10) *") {
         $mensajeError = "Los campos con * son requeridos...";
         $error = 1;
         $corregir = false;
+        echo "No haga trampas y revise los campos";
         //        echo "<span class='error' style='text-align: center;margin: 0 auto;color:red;font-weight: bold;'>Debes rellenar todos los campos</span>";
     } elseif (empty($img)) {
         $mensajeError = "Debes de añadir una imagen";
         $error = 1;
         $corregir = false;
+        echo "No haga trampas y revise los campos (valor erróneo imagen)";
         //        echo "<span class='error' style='text-align: center;margin: 0 auto;color:red;font-weight: bold;'>Debes añadir una imagen</span>";
     } elseif (!is_numeric($altura) || !is_numeric($peso) || !is_numeric($longitud) || !is_numeric($velocidad) || !is_numeric($poder)) {
         $mensajeError = "Revisa los campos, hay algún dato incorrecto";
         $error = 1;
         $corregir = false;
+        echo "Los campos no son numéricos";
         //        echo "<span class='error'>Lo sentimos hay un error en alguno de los campos requeridos</span>";
     } elseif ($poder < 0 || $poder > 10) {
         $mensajeError = "El poder tiene que estar entre 0 y 10";
         $error = 1;
         $corregir = false;
+        echo "El poder tiene que estar entre 1 y 10";
         //        echo "<span class='error'>El poder debe ser un valor comprendido entre 0 y 10</span>";
+    } elseif (!empty($s->fetch(PDO::FETCH_ASSOC))) {
+        echo "Revise el formulario de nuevo...";
+        $mensajeError = "Esta carta ya existe en la base de datos";
     } else {
         if ($descripcion == "Escriba una pequeña descripción de no más de 300 caracteres") {
             $descripcion = "Esta carta no contiene descripción";
@@ -89,18 +100,15 @@ if (isset($_POST['submit'])) {
         $stmt->execute(array(":idcarta" => $id, ":pregunta" => 'poder', ":respuesta" => $poder, ":magnitud" => ""));
 
         if ((move_uploaded_file($_FILES['imganimal']['tmp_name'], "img/" . $img))) {
-            echo "correcto";
+            //        echo "correcto";
         }
     }
+    //    echo "<script>alert('Compruebe el formulario')</script>";
 }
 //header("Location: localhost:63342/pruebagitweb/index.php#slide-5");
 
-function corregir() {
-
-
-}
-
 ?>
+
     <!-- Ban -->
     <div class="slide story" id="slide-1" xmlns="http://www.w3.org/1999/html">
         <div id="content">
@@ -157,7 +165,7 @@ function corregir() {
                     <ul class="grid cs-style-5">
                         <li>
                             <figure>
-                                <img src="images/newImages/ourWork1.png" alt="about-us"
+                                <img src="images/newImages/ourWork.png" alt="about-us"
                                      class="img-responsive slideanim">
                                 <figcaption>
                                     <h4>Aplicación en nuestro móvil</h4>
@@ -172,7 +180,6 @@ function corregir() {
             </div>
         </div>
     </section>
-    </div>
     <!-- /About Us -->
     <!-- === Slide 2 === -->
     <div class="slide story" id="slide-2">
@@ -210,7 +217,8 @@ function corregir() {
                             <figure>
                                 <div class="view"><img src="images/newImages/ourWork2.png"/></div>
                                 <figcaption>
-                                    <p><span><a href="https://github.com/TeamBiscochito" target="_blank">Inicio de App / Repositorio</a></span></p>
+                                    <p><span><a href="https://github.com/TeamBiscochito" target="_blank">Inicio de App / Repositorio</a></span>
+                                    </p>
                                     <p><span>Team Biscochito</span></p>
                                 </figcaption>
                             </figure>
@@ -220,7 +228,9 @@ function corregir() {
                             <figure>
                                 <div class="view"><img src="images/newImages/ourWork3.png"/></div>
                                 <figcaption>
-                                    <p><span><a href="https://github.com/TeamBiscochito/proyectofinal/releases/tag/v0.0.1" target="_blank">Primera versión v0.0.1</a></span></p>
+                                    <p>
+                                        <span><a href="https://github.com/TeamBiscochito/proyectofinal/releases/tag/v0.0.1"
+                                                 target="_blank">Primera versión v0.0.1</a></span></p>
                                     <p><span>Animales Salvajes</span></p>
                                 </figcaption>
                             </figure>
@@ -230,112 +240,50 @@ function corregir() {
                             <figure>
                                 <div class="view"><img src="images/newImages/ourWork4.png"/></div>
                                 <figcaption>
-                                    <p><span><a href="https://github.com/TeamBiscochito/proyectofinal/releases/tag/v0.0.2" target="_blank">Segunda versión v0.0.2</a></span></p>
+                                    <p>
+                                        <span><a href="https://github.com/TeamBiscochito/proyectofinal/releases/tag/v0.0.2"
+                                                 target="_blank">Segunda versión v0.0.2</a></span></p>
                                     <p><span>Animales Salvajes</span></p>
                                 </figcaption>
                             </figure>
                             <div class="date" style="width: 30%">2021-01-15</div>
                         </li>
-<!--                        <li class="item">-->
-<!--                            <figure>-->
-<!--                                <div class="view"><img src="images/work6.jpg"/></div>-->
-<!--                                <figcaption>-->
-<!--                                    <p><span><a href="#0">Go Far With Birds.</a></span></p>-->
-<!--                                    <p><span>By Ornithology</span></p>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                            <div class="date">2015</div>-->
-<!--                        </li>-->
-<!--                        <li class="item">-->
-<!--                            <figure>-->
-<!--                                <div class="view"><img src="images/work7.jpg"/></div>-->
-<!--                                <figcaption>-->
-<!--                                    <p><span><a href="#0">Birds For Me.</a></span></p>-->
-<!--                                    <p><span>By Ornithology</span></p>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                            <div class="date">2016</div>-->
-<!--                        </li>-->
-<!--                        <li class="item">-->
-<!--                            <figure>-->
-<!--                                <div class="view"><img src="images/work8.jpg"/></div>-->
-<!--                                <figcaption>-->
-<!--                                    <p><span><a href="#0">Birds - Enjoy The Difference.</a></span></p>-->
-<!--                                    <p><span>By Ornithology</span></p>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                            <div class="date">2017</div>-->
-<!--                        </li>-->
-<!--                        <li class="item">-->
-<!--                            <figure>-->
-<!--                                <div class="view"><img src="images/work9.jpg"/></div>-->
-<!--                                <figcaption>-->
-<!--                                    <p><span><a href="#0">Try Birds You'll Like It.</a></span></p>-->
-<!--                                    <p><span>By Ornithology</span></p>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                            <div class="date">2018</div>-->
-<!--                        </li>-->
-<!--                        <li class="item">-->
-<!--                            <figure>-->
-<!--                                <div class="view"><img src="images/work10.jpg"/></div>-->
-<!--                                <figcaption>-->
-<!--                                    <p><span><a href="#0">Birds, Take Me Away.</a></span></p>-->
-<!--                                    <p><span>By Ornithology</span></p>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                            <div class="date">2019</div>-->
-<!--                        </li>-->
-<!--                        <li class="item">-->
-<!--                            <figure>-->
-<!--                                <div class="view"><img src="images/work11.jpg"/></div>-->
-<!--                                <figcaption>-->
-<!--                                    <p><span><a href="#0">Most Exellent Birds</a></span></p>-->
-<!--                                    <p><span>By Ornithology</span></p>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                            <div class="date">2020</div>-->
-<!--                        </li>-->
-<!--                        <li class="item">-->
-<!--                            <figure>-->
-<!--                                <div class="view"><img src="images/work12.jpg"/></div>-->
-<!--                                <figcaption>-->
-<!--                                    <p><span><a href="#0">All Birds, All the Time.</a></span></p>-->
-<!--                                    <p><span>By Ornithology</span></p>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                            <div class="date">2021</div>-->
-<!--                        </li>-->
-<!--                        <li class="item">-->
-<!--                            <figure>-->
-<!--                                <div class="view"><img src="images/work13.jpg"/></div>-->
-<!--                                <figcaption>-->
-<!--                                    <p><span><a href="#0">Birds For Your Life.</a></span></p>-->
-<!--                                    <p><span>By Ornithology</span></p>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                            <div class="date">2022</div>-->
-<!--                        </li>-->
-<!--                        <li class="item">-->
-<!--                            <figure>-->
-<!--                                <div class="view"><img src="images/work14.jpg"/></div>-->
-<!--                                <figcaption>-->
-<!--                                    <p><span><a href="#0">Life's Beautiful With Birds.</a></span></p>-->
-<!--                                    <p><span>By Ornithology</span></p>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                            <div class="date">2023</div>-->
-<!--                        </li>-->
-<!--                        <li class="item">-->
-<!--                            <figure>-->
-<!--                                <div class="view"><img src="images/work15.jpg"/></div>-->
-<!--                                <figcaption>-->
-<!--                                    <p><span><a href="#0">Me And My Birds.</a></span></p>-->
-<!--                                    <p><span>By Ornithology</span></p>-->
-<!--                                </figcaption>-->
-<!--                            </figure>-->
-<!--                            <div class="date">2024</div>-->
-<!--                        </li>-->
+                        <li class="item">
+                            <figure>
+                                <div class="view"><img src="images/newImages/ourWork5.png"/></div>
+                                <figcaption>
+                                    <p>
+                                        <span><a href="https://github.com/TeamBiscochito/proyectofinal/releases/tag/v0.0.5"
+                                                 target="_blank">Tercera versión v0.0.5</a></span></p>
+                                    <p><span>Animales Salvajes</span></p>
+                                </figcaption>
+                            </figure>
+                            <div class="date" style="width: 30%">2021-01-21</div>
+                        </li>
+                        <li class="item">
+                            <figure>
+                                <div class="view"><img src="images/newImages/ourWork6.png"/></div>
+                                <figcaption>
+                                    <p>
+                                        <span><a href="https://github.com/TeamBiscochito/proyectofinal/releases/tag/v0.0.7"
+                                                 target="_blank">Cuarta versión v0.0.7</a></span></p>
+                                    <p><span>Animales Salvajes</span></p>
+                                </figcaption>
+                            </figure>
+                            <div class="date" style="width: 30%">2021-01-26</div>
+                        </li>
+                        <li class="item">
+                            <figure>
+                                <div class="view"><img src="images/newImages/ourWork7.png"/></div>
+                                <figcaption>
+                                    <p>
+                                        <span><a href="https://github.com/TeamBiscochito/proyectofinal/releases/tag/v0.0.9"
+                                                 target="_blank">Quinta versión v0.0.9</a></span></p>
+                                    <p><span>Animales Salvajes</span></p>
+                                </figcaption>
+                            </figure>
+                            <div class="date" style="width: 30%">2021-01-29</div>
+                        </li>
                     </ul>
                 </div>
             </div><!-- /container -->
@@ -536,17 +484,19 @@ function corregir() {
                                         de la carta<span class="shipping" style="margin: 0;"> </span></h4>
                                     <ul style="display: flex;justify-content: center;">
                                         <li style="width: 100%;display: flex;justify-content: center;"><input
-                                                    class="text-box-dark" type="text" name="nombre"
-                                                    value="Nombre de la carta / Elefante *"
-                                                    onfocus="if (this.value == 'Nombre de la carta / Elefante *') {this.value = ''}"
-                                                    onblur="if (this.value == '') {this.value = 'Nombre de la carta / Elefante *';}"
+                                                    class="text-box-dark" type="text" name="nombre" id="nombre"
+                                                    value="Nombre de la carta / Elefante (primera letra mayúscula) *"
+                                                    onfocus="if (this.value == 'Nombre de la carta / Elefante (primera letra mayúscula) *') {this.value = ''}"
+                                                    onblur="if (this.value == '') {this.value = 'Nombre de la carta / Elefante (primera letra mayúscula) *';}"
                                                     style="margin: 0;width: 80%;text-align: center;"></li>
                                     </ul>
                                     <ul style="display: flex;justify-content: space-around;">
                                         <li style="display: flex;width: 100%;justify-content: space-around;"><input
-                                                    class="text-box-dark" type="text" name="altura" value="Altura *"
-                                                    onfocus="if (this.value == 'Altura *') {this.value = ''}"
-                                                    onblur="if (this.value == '') {this.value = 'Altura *';}"
+                                                    class="text-box-dark" type="text" name="altura"
+                                                    value="Altura (1-9999) *"
+                                                    id="altura"
+                                                    onfocus="if (this.value == 'Altura (1-9999) *') {this.value = ''}"
+                                                    onblur="if (this.value == '') {this.value = 'Altura (1-9999) *';}"
                                                     style="width: 80%;text-align: center;margin: 2% 0px;padding: 3%;">
                                         </li>
                                         <li style="display: flex;width: 100%;justify-content: space-around;"><select
@@ -559,9 +509,11 @@ function corregir() {
 
                                     <ul style="display: flex;justify-content: space-around;">
                                         <li style="display: flex;width: 100%;justify-content: space-around;"><input
-                                                    class="text-box-dark" type="text" name="peso" value="Peso *"
-                                                    onfocus="if (this.value == 'Peso *') {this.value = ''}"
-                                                    onblur="if (this.value == '') {this.value = 'Peso *';}"
+                                                    class="text-box-dark" type="text" name="peso"
+                                                    value="Peso (1-9999) *"
+                                                    id="peso"
+                                                    onfocus="if (this.value == 'Peso (1-9999) *') {this.value = ''}"
+                                                    onblur="if (this.value == '') {this.value = 'Peso (1-9999) *';}"
                                                     style="width: 80%;text-align: center;margin: 2% 0px;padding: 3%;">
                                         </li>
                                         <li style="display: flex;width: 100%;justify-content: space-around;"><select
@@ -575,9 +527,11 @@ function corregir() {
 
                                     <ul style="display: flex;justify-content: space-around;">
                                         <li style="display: flex;width: 100%;justify-content: space-around;"><input
-                                                    class="text-box-dark" type="text" name="longitud" value="Longitud *"
-                                                    onfocus="if (this.value == 'Longitud *') {this.value = ''}"
-                                                    onblur="if (this.value == '') {this.value = 'Longitud *';}"
+                                                    class="text-box-dark" type="text" name="longitud"
+                                                    value="Longitud (1-9999) *"
+                                                    id="longitud"
+                                                    onfocus="if (this.value == 'Longitud (1-9999) *') {this.value = ''}"
+                                                    onblur="if (this.value == '') {this.value = 'Longitud (1-9999) *';}"
                                                     style="width: 80%;text-align: center;margin: 2% 0px;padding: 3%;">
                                         </li>
                                         <li style="display: flex;width: 100%;justify-content: space-around;"><select
@@ -591,9 +545,10 @@ function corregir() {
                                     <ul style="display: flex;justify-content: space-around;">
                                         <li style="display: flex;width: 100%;justify-content: space-around;"><input
                                                     class="text-box-dark" type="text" name="velocidad"
-                                                    value="Velocidad *"
-                                                    onfocus="if (this.value == 'Velocidad *') {this.value = ''}"
-                                                    onblur="if (this.value == '') {this.value = 'Velocidad *';}"
+                                                    id="velocidad"
+                                                    value="Velocidad (1-9999) *"
+                                                    onfocus="if (this.value == 'Velocidad (1-9999) *') {this.value = ''}"
+                                                    onblur="if (this.value == '') {this.value = 'Velocidad (1-9999) *';}"
                                                     style="width: 80%;text-align: center;margin: 2% 0px;padding: 3%;">
                                         </li>
                                         <li style="display: flex;width: 100%;justify-content: space-around;"><select
@@ -605,7 +560,7 @@ function corregir() {
 
                                     <ul style="display: flex;justify-content: center;">
                                         <li style="width: 100%;display: flex;justify-content: center;"><input
-                                                    class="text-box-dark" type="text" name="poder"
+                                                    class="text-box-dark" type="text" name="poder" id="poder"
                                                     value="Poder mortífero (1-10) *"
                                                     onfocus="if (this.value == 'Poder mortífero (1-10) *') {this.value = ''}"
                                                     onblur="if (this.value == '') {this.value = 'Poder mortífero (1-10) *';}"
@@ -647,32 +602,33 @@ function corregir() {
                                         </li>
                                     </ul>
 
+                                    <ul class="payment-sendbtns" style="float: none;display: flex; margin-top: 3%">
+                                        <li style="width: 50%;">
+                                            <button type="button" name="validar" id="validar"
+                                                    style="background: #ff9a02; padding: 6px 50px; border: none; color: #FFF; cursor: pointer; font-size: 1.2em; display: block; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; outline: none; width: 100%">
+                                                Validar carta
+                                            </button>
+                                        </li>
+                                        <li style="width: 50%;">
+                                            <button type="submit" name="submit" id="submit" disabled="disabled"
+                                                    style="margin: 0;width: 100%; background-color: #1abc9c40">Añadir
+                                                carta
+                                            </button>
+                                        </li>
+                                    </ul>
+
                                     <ul>
                                         <li style="margin-top: 3%;">
                                             <?php
                                             if (isset($error)) {
-                                                /** @var String $mensajeError */
-                                                echo "<span class='error" . $error . "' style='text-align: center;margin: 0 auto;color:red;font-weight: bold;'>" . $mensajeError . '</span>';
+                                                echo "<span id='error' class='error" . $error . "' style='text-align: center;margin: 0 auto;color:red;font-weight: bold;'>" . $mensajeError . '</span>';
                                             }
                                             ?>
+                                            <span id="error"
+                                                  style="text-align: center;margin: 0 auto;color:red;font-weight: bold;"></span>
                                         </li>
                                     </ul>
 
-                                    <ul class="payment-sendbtns" style="float: none;display: flex;">
-                                        <li style="width: 50%;"><input type="reset" value="Resetear"
-                                                                       style="margin: 0;width: 100%;"></li>
-                                        <li style="width: 50%;">
-                                            <button type="submit" name="submit" id="submit"
-                                                    style="margin: 0;width: 100%;">Añadir carta
-                                            </button>
-                                            <!--                                            <a href="#small-dialog" class="order" style="margin: 0;width: 100%;">Añadir carta</a>-->
-                                        </li>
-                                    </ul>
-                                    <!--                                    <ul class="payment-sendbtns" style="float: none;display: flex;">-->
-                                    <!--                                        <li style="width: 100%;">-->
-                                    <!--                                            <input type="button" value="Validar todos los campos" id="validar"-->
-                                    <!--                                                   style="margin: 0;width: 100%;"></li>-->
-                                    <!--                                    </ul>-->
 
                                     <script>
                                         function init() {
@@ -692,7 +648,6 @@ function corregir() {
 
                                         window.addEventListener('load', init, false);
                                     </script>
-
                                 </form>
                             </div>
                         </div>
