@@ -36,15 +36,15 @@ $stmt->execute();
 
 
 <?php while ($resultset = $stmt->fetch(PDO::FETCH_ASSOC)) {
-    $query = "select * from pregunta where idcarta = :idcarta";
+    $query = "select * from pregunta where card_id = :idcard";
     $st = $con->prepare($query);
-    $st->execute(array(":idcarta" => $resultset['id']));
-    echo '<p>Nombre:' . $resultset['nombre'] . '</p>';
-    echo '<p>' . $resultset['descripcion'] . '</p>';
-    echo "<img src=\"img/" . $resultset['imagen'] . "\" height=\"500\" width=\"750\" alt=\"" . $resultset['imagen'] . "\" > ";
+    $st->execute(array(":idcard" => $resultset['id']));
+    echo '<p>Nombre:' . $resultset['name'] . '</p>';
+    echo '<p>' . $resultset['description'] . '</p>';
+    echo "<img src=\"img/" . $resultset['picUrl'] . "\" height=\"500\" width=\"750\" alt=\"" . $resultset['picUrl'] . "\" > ";
     if ($st->rowCount() > 0) {
         while ($rs = $st->fetch(PDO::FETCH_ASSOC)) {
-            echo "<p>" . $rs['pregunta'] . ": " . $rs['respuesta'] . $rs['magnitud'] . " </p>";
+            echo "<p>" . $rs['question'] . ": " . $rs['answer'] . $rs['magnitude'] . " </p>";
         }
     }
     echo "<br/> <br/> <br/> <br/> <br/>";

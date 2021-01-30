@@ -30,13 +30,13 @@ if (isset($_POST['submit'])) {
         echo "<span>El poder debe ser un valor comprendido entre 0 y 10</span>";
     } else {
 
-        $sql = "insert into carta values(null, :nombre, :descripcion, :imagen )";
+        $sql = "insert into carta values(null, :imagen, :nombre, :descripcion  )";
         $stmt = $con->prepare($sql);
 
         $stmt->execute(array(":nombre" => $nombre, ":descripcion" => $descripcion, ":imagen" => $img));
 
 
-        $query = "select id from carta where nombre = :nombre";
+        $query = "select id from carta where name = :nombre";
         $st = $con->prepare($query);
         $st->execute(array(":nombre" => $nombre));
         $rs = $st->fetch(PDO::FETCH_ASSOC);
