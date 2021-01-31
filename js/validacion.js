@@ -29,7 +29,7 @@ $(document).ready(function () {
     let onlyNumber1to10 = new RegExp('^[1-9]$|^10$');
 
     // Solo nombre - Regex
-    let onlyLetters = new RegExp('^[A-Z][a-z][A-Za-z-ÖØ-öø-ÿ]{0,10}$');
+    let onlyLetters = new RegExp('^[A-Z][a-z][A-Za-z-ÖØ-öø-ÿ][\\s\\S]{0,9}$');
 
     // Validar nombre
     $('#nombre').change(function () {

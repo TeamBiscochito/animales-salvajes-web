@@ -1,16 +1,22 @@
 <?php
 
+/**
+ * Class DBConnection
+ */
+
 class DBConnection {
 
     protected $settings;
 
     public $dbc;
 
-    /*
-     * Funcion que devuelve una instancia de conexion a la BBDD
-     * @ param array Contiene los settings de la conexion
+    /**
+     * DBConnection constructor.
+     *
+     * Función que devuelve una instancia de conexión a la BBDD
+     *
+     * @param array $config Contiene los settings de la conexión
      */
-
     public function __construct(array $config) {
 
         // Debemos recoger los datos de los settings
@@ -19,8 +25,6 @@ class DBConnection {
         // de la conexion
 
         $this->getDBConnection();
-
-
     }
 
     public function getDBConnection() {
@@ -28,7 +32,7 @@ class DBConnection {
 
 
         if ($this->dbc == NULL) {
-            $dsn = "" . $this->settings['driver'] . ":host=" . $this->settings['host'] . ";dbname=" . $this->settings['dbname'];
+            $dsn = "" . $this->settings['driver'] . ":host=" . $this->settings['host'] . ";dbname=" . $this->settings['dbname'] . ";charset=utf8mb4";
             $options = array();
             try {
                 $this->dbc = new PDO($dsn, $this->settings['username'], $this->settings['password'], $options);

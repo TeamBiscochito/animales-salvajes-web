@@ -23,7 +23,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="imagenes eliminadas">
+      <change afterPath="$PROJECT_DIR$/img/cocodrilo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/elefante.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/oso.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tigre.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85cd4c81-f418-49b7-800d-1c4f8049cd31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/85cd4c81-f418-49b7-800d-1c4f8049cd31.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBConnection.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBConnection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/DBConnection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/addcard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/img/706b8e922df2e05504d8dc5f6e042d2d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/img/9788498726138.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/img/Arthdrag.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/img/BlackAsta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/img/Hoid 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/img/Zoe_0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/img/kda-all-out-seraphine-lol-splash-art-uhdpaper.com-hd-7.2954.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/myjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/nav.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/showcard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivos php/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/validacion.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/validacion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,18 +91,19 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last.edited.regexp" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/archivos php" />
+    <property name="last.edited.regexp" value="Tortuga m." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Keyster\Desktop\pruebagitweb\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Keyster\Desktop\pruebagitweb\img" />
       <recent name="C:\Users\Keyster\Desktop\pruebagitweb\archivos php" />
       <recent name="C:\Users\Keyster\Desktop\pruebagitweb\archivos php\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Keyster\Desktop\pruebagitweb\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -250,26 +280,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611909005982" />
-    <state width="1877" height="253" key="GridCell.Tab.0.bottom" timestamp="1612091864392">
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1612116665925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
-    <state width="1877" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612091864392" />
-    <state width="1877" height="253" key="GridCell.Tab.0.center" timestamp="1612091864392">
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612116665925" />
+    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1612116665925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
-    <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612091864392" />
-    <state width="1877" height="253" key="GridCell.Tab.0.left" timestamp="1612091864392">
+    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612116665925" />
+    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1612116665925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
-    <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612091864392" />
-    <state width="1877" height="253" key="GridCell.Tab.0.right" timestamp="1612091864392">
+    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612116665925" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1612116665925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
-    <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612091864392" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612116665925" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1611913024215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -294,10 +324,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="263" height="441" key="SqlResolveConfigurable/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611913243977" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1612091941818">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1612092174474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612091941818" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612092174474" />
     <state x="838" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1612047945555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -314,10 +344,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611905742199" />
-    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1612056001783">
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1612130810479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612056001783" />
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612130810479" />
     <state x="740" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611581422904">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

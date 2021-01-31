@@ -1,4 +1,5 @@
 <!-- Footer section -->
+<?php require_once('config.php');?>
 <section class="footer" id="footer">
     <div class="container">
         <div class="col-lg-3 col-sm-6">
@@ -73,31 +74,39 @@
                 <h3 style="text-align: center; color:lime">Cartas recientes</h3>
                 <div id="photoGallery-container"
                      style="margin: 0 auto;display: flex;flex-wrap: wrap;justify-content: center;">
+                    <?php
+                    if (isset($_GET['pag'])) {
+                        $actual = $_GET['pag'];
+                        if ($actual < 1) {
+                            $actual = 1;
+                        }
+                    } else {
+                        $actual = 1;
+                    }
 
-                    <img class="photoGallery" data-src="images/footer-pic1.jpg" src="images/footer-pic1.jpg"
-                         data-id="pic_1" data-desc="ORNITHOLOGY - THE WORLD OF BIRDS">
-                    <img class="photoGallery" data-src="images/footer-pic2.jpg" src="images/footer-pic2.jpg"
-                         data-id="pic_2" data-desc="ORNITHOLOGY - THE WORLD OF BIRDS">
-                    <img class="photoGallery" data-src="images/footer-pic3.jpg" src="images/footer-pic3.jpg"
-                         data-id="pic_3" data-desc="ORNITHOLOGY - THE WORLD OF BIRDS">
-                    <img class="photoGallery" data-src="images/footer-pic4.jpg" src="images/footer-pic4.jpg"
-                         data-id="pic_4" data-desc="ORNITHOLOGY - THE WORLD OF BIRDS">
-                    <img class="photoGallery" data-src="images/footer-pic5.jpg" src="images/footer-pic5.jpg"
-                         data-id="pic_5" data-desc="ORNITHOLOGY - THE WORLD OF BIRDS">
-                    <img class="photoGallery" data-src="images/footer-pic6.jpg" src="images/footer-pic6.jpg"
-                         data-id="pic_6" data-desc="ORNITHOLOGY - THE WORLD OF BIRDS">
-                    <img class="photoGallery" data-src="images/footer-pic7.jpg" src="images/footer-pic7.jpg"
-                         data-id="pic_7" data-desc="ORNITHOLOGY - THE WORLD OF BIRDS">
-                    <img class="photoGallery" data-src="images/footer-pic8.jpg" src="images/footer-pic8.jpg"
-                         data-id="pic_8" data-desc="ORNITHOLOGY - THE WORLD OF BIRDS">
-                    <img class="photoGallery" data-src="images/footer-pic9.jpg" src="images/footer-pic9.jpg"
-                         data-id="pic_9" data-desc="ORNITHOLOGY - THE WORLD OF BIRDS">
-                    <img class="photoGallery" data-src="images/footer-pic10.jpg" src="images/footer-pic10.jpg"
-                         data-id="pic_9" data-desc="ORNITHOLOGY - THE WORLD OF BIRDS">
-                    <img class="photoGallery" data-src="images/footer-pic11.jpg" src="images/footer-pic11.jpg"
-                         data-id="pic_9" data-desc="ORNITHOLOGY - THE WORLD OF BIRDS">
-                    <img class="photoGallery" data-src="images/footer-pic12.jpg" src="images/footer-pic12.jpg"
-                         data-id="pic_9" data-desc="ORNITHOLOGY - THE WORLD OF BIRDS">
+                    // Hay que coger cuantas cartas hay para ver
+                    $sql = "select * from carta";
+                    $stmt = $con->prepare($sql);
+                    $stmt->execute();
+
+                    $consulta = "select COUNT(*) from carta";
+                    $statement = $con->prepare($sql);
+                    $statement->execute();
+
+                    $tuplas = $statement->rowCount();
+                    $pags = ceil($tuplas / 12);
+
+                    $sql = "select * from carta limit 12";
+                    $stmt = $con->prepare($sql);
+                    $stmt->execute();
+
+                    while ($resultset = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        $query = "select * from pregunta where card_id = :idcard";
+                        $st = $con->prepare($query);
+                        $st->execute(array(":idcard" => $resultset['id']));
+                        echo '<img class="photoGallery" data-src=img/'.$resultset['picUrl'].' src=img/'.$resultset['picUrl'].' data-id=img/'.$resultset['picUrl'].' data-desc='.$resultset['name'].'>';
+                    }
+                    ?>
                 </div>
             </div>
         </div>
@@ -113,16 +122,6 @@
             </div>
         </div>
     </div>
-<!--    <div class="container">-->
-<!--        <hr>-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-12">-->
-<!--                <iframe src="archivos%20php/showcard.php" style="width: 1000px; height: 900px">-->
-<!--                    <p>Su navegador no es compatible con iFrame</p>-->
-<!--                </iframe>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
 </section>
 <!-- /Footer section -->
 </body>

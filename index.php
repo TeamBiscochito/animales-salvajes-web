@@ -5,13 +5,13 @@ require_once('config.php');
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
-?>
-<?php
 
 require_once('navbar.php');
 $corregir = false;
 $mensajeError = "";
+$mensajeError2 = "";
 $error = 1;
+$error2 = 1;
 
 if (isset($_POST['submit'])) {
     $nombre = $_POST['nombre'];
@@ -58,14 +58,16 @@ if (isset($_POST['submit'])) {
         echo "El poder tiene que estar entre 1 y 10";
         //        echo "<span class='error'>El poder debe ser un valor comprendido entre 0 y 10</span>";
     } elseif (!empty($s->fetch(PDO::FETCH_ASSOC))) {
-        echo "Revise el formulario de nuevo...";
-        $mensajeError = "Esta carta ya existe en la base de datos";
+        $mensajeError2 = "Esta carta ya existe en la base de datos";
+        $error2 = 1;
+//        header("Location: http://localhost:63342/pruebagitweb/index.php#slide-4");
     } else {
         if ($descripcion == "Escriba una pequeña descripción de no más de 300 caracteres") {
             $descripcion = "Esta carta no contiene descripción";
         }
         $mensajeError = "La carta se ha subido satisfactoriamente";
         $error = 0;
+        $error2 = 0;
 
         $sql = "insert into carta values(null, :imagen, :nombre, :descripcion  )";
         $stmt = $con->prepare($sql);
@@ -105,7 +107,6 @@ if (isset($_POST['submit'])) {
     }
     //    echo "<script>alert('Compruebe el formulario')</script>";
 }
-//header("Location: localhost:63342/pruebagitweb/index.php#slide-5");
 
 ?>
 
@@ -191,7 +192,7 @@ if (isset($_POST['submit'])) {
         <p class="text-center slideanim">Animales Salvajes - Progreso de todo el desarrollado - Open Source
             Github</p>
         <div class="container-fluid">
-            <div class="demo-wrapper">
+            <div class="demo-wrapper" id="subeArriba">
                 <ul class="portfolio-items">
                     <li class="item">
                         <figure>
@@ -312,9 +313,9 @@ if (isset($_POST['submit'])) {
     $statement->execute();
 
     $tuplas = $statement->rowCount();
-    $pags = ceil($tuplas / 5);
+    $pags = ceil($tuplas / 4);
 
-    $sql = "select * from carta limit 4 offset " . (($actual - 1) * 5);
+    $sql = "select * from carta limit 4 offset " . (($actual - 1) * 4);
     $stmt = $con->prepare($sql);
     $stmt->execute();
     ?>
@@ -351,25 +352,25 @@ if (isset($_POST['submit'])) {
                 ?>
             </div>
         </div>
-        <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; align-content: center; margin-top: 30px">
+        <div class="divPaginas">
             <?php if ($actual == 1) {
                 echo "<span class='botonesPag'>Anterior</span>";
             } else {
-                echo "<a class='botonesPagActiva' href =" . $_SERVER['PHP_SELF'] . '?pag=' . ($actual - 1) . " >Anterior  </a>";
+                echo "<a class='botonesPagActiva' href =" . $_SERVER['PHP_SELF'] . '?pag=' . ($actual - 1) . "#subeArriba>Anterior  </a>";
             }
 
             for ($i = 1; $i <= $pags; $i++) {
                 if ($i == $actual) {
                     echo "<span class='paginas'> " . $i . "  </span>";
                 } else {
-                    echo "<a class='paginaActiva' href =" . $_SERVER['PHP_SELF'] . '?pag=' . ($i) . " > " . $i . "  </a>";
+                    echo "<a class='paginaActiva' href =" . $_SERVER['PHP_SELF'] . '?pag=' . ($i) . "#subeArriba> " . $i . "  </a>";
                 }
             }
 
             if ($actual == $pags) {
                 echo "<span class='botonesPag'>Siguiente</span>";
             } else {
-                echo "<a class='botonesPagActiva' href =" . $_SERVER['PHP_SELF'] . '?pag=' . ($actual + 1) . " >Siguiente</a>";
+                echo "<a class='botonesPagActiva' href =" . $_SERVER['PHP_SELF'] . '?pag=' . ($actual + 1) . "#subeArriba>Siguiente</a>";
             }
             ?>
             <style>
@@ -475,7 +476,7 @@ if (isset($_POST['submit'])) {
                                 pueden integrar mas cartas por defecto al juego estaría genial, todo el juego esta
                                 muy bien en sí. Para jugar con niños es super entretenido.</p>
                         </div>
-                        <div class="test-info2">
+                        <div class="test-info2" id="bajarParaAbajo">
                             <img src="images/test-img3.png" alt="test-img" class="img-responsive slideanim">
                             <div class="test-details3 slideanim">
                                 <h4>Jusep Almedina</h4>
@@ -503,7 +504,7 @@ if (isset($_POST['submit'])) {
             rellena los datos</p>
         <div class="container">
             <div class="grid1 slideanim">
-                <span>Se necesita - Nombre de carta</span>
+                <span>Nombre de carta</span>
                 <h2 style="font-size: 21px; font-weight: bold">Ingrese - Poder mortífero</h2>
                 <div class="para">
                     <p>Se necesita - Altura</p>
@@ -514,7 +515,7 @@ if (isset($_POST['submit'])) {
                         añadir</p>
                 </div>
                 <div class="sign text-center">
-                    <a href="#Agregar">Añadir</a>
+                    <a>Añadir</a>
                 </div>
             </div>
             <div class="grid2 slideanim" id="imagenCarta">
@@ -532,6 +533,11 @@ if (isset($_POST['submit'])) {
                 </div>
                 <div class="sign text-center">
                     <a class="popup-with-zoom-anim" href="#small-dialog">Añade tu carta</a>
+                    <?php
+                    if (isset($error2)) {
+                        echo "<p class='error" . $error . "' style='color: red; margin-top: 20px; font-weight: bold;'>" . $mensajeError2 . '</p>';
+                    }
+                    ?>
                 </div>
             </div>
             <div class="grid3 slideanim">
@@ -546,16 +552,17 @@ if (isset($_POST['submit'])) {
                         añadir</p>
                 </div>
                 <div class="sign text-center">
-                    <a href="#Agregar">Añadir</a>
+                    <a>Añadir</a>
                 </div>
             </div>
+            <p></p>
             <div class="clear"></div>
             <!--pop-up-grid-->
             <div id="popup">
                 <div id="small-dialog" class="mfp-hide slideanim" style="height: 750px">
                     <div class="pop_up" style="height: 100%">
                         <div class="payment-online-form-left" id="imganimal">
-                            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST"
+                            <form action="index.php#bajarParaAbajo" method="POST"
                                   enctype="multipart/form-data" href="#imagenCarta">
                                 <h4 style="display: flex;justify-content: space-around;"><span class="shipping"
                                                                                                style="margin: 0;"> </span>Detalles
@@ -737,6 +744,87 @@ if (isset($_POST['submit'])) {
     </section>
 </div>
 <!-- /Pricing Tables -->
+<div class="slide story" id="slide-6" data-slide="6">
+    <section class="our-contacts slideanim" id="contact">
+        <h3 class="slideanim">¡ Contacta con nosotros !</h3>
+        <div class="container">
+            <hr>
+        </div>
+        <p class="text-center slideanim">Si tienes algún problema en el juego o quieres sugerir algún cambio o
+            añadir cosas a la aplicación, no dudes en contactarnos</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 slideanim">
+                    <form role="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <input type="text" name="Name" class="form-control user-name"
+                                       placeholder="Tu nombre" required/>
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <input type="email" name="Email" class="form-control mail" placeholder="Tu Correo"
+                                       required/>
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <input type="tel" name="Phone" class="form-control pno"
+                                       placeholder="Tu número de teléfono" required/>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="form-group col-lg-12">
+                                    <textarea class="form-control" name="Message" rows="6"
+                                              placeholder="Breve descripción de que es lo que propones, quieras mejorar, soluciones..."
+                                              required></textarea>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <button type="submit" href="#" class="btn-outline" name="email" id="email">Enviar
+                                </button>
+                            </div>
+                            <?php
+
+                            if (isset($_POST['email'])) {
+                                $visitor_name = "";
+                                $visitor_email = "";
+                                $phone = "";
+                                $visitor_message = "";
+                                $email_title = "Sugerencia para Animales Salvajes";
+
+                                if (isset($_POST['Email'])) {
+                                    $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['Email']);
+                                    $visitor_email = filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
+                                }
+
+                                if (isset($_POST['Message']) && isset($_POST['Phone']) && isset($_POST['Name'])) {
+                                    $visitor_name = $_POST['Name'];
+                                    $phone = $_POST['Phone'];
+                                    $complexMessage = htmlspecialchars($_POST['Message']);
+
+                                    $visitor_message = "Hola: " . $visitor_name . "," . "\r\n" . ".Su número de teléfono: " . $phone . "\r\n" . $complexMessage;
+                                }
+
+                                $recipient = "iofernandezllebrez134@ieszaidinvergeles.org";
+
+                                $headers = 'MIME-Version: 1.0' . "\r\n"
+                                    . 'Content-type: text/html; charset=utf-8' . "\r\n"
+                                    . 'From: ' . $visitor_email . "\r\n";
+
+                                if (mail($recipient, $email_title, $visitor_message, $headers)) {
+                                    echo "<p>Gracias por contactar con nosotros, $visitor_name. Recibirás una respuesta en menos de 24h</p>";
+                                } else {
+                                    echo '<p>Lo sentimos pero ha habido un problema y no se ha podido enviar, intentelo de nuevo más tarde</p>';
+                                }
+
+                            } else {
+                                echo '<p>¡Rellene el formulario para poder enviarlo!</p>';
+                            }
+
+                            ?>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 <!-- Our History -->
 <section class="history slideanim">
     <h3 class="text-center slideanim">Nuestro equipo de desarrollo</h3>
@@ -744,7 +832,7 @@ if (isset($_POST['submit'])) {
         <hr>
     </div>
     <p class="text-center slideanim">Descripción de lo que hace cada uno de los integrantes de nuestro proyecto
-        <strong>"Animales Salvajes"</strong></p>
+        <b style="font-weight: bold">"Animales Salvajes"</b><br><a href="https://github.com/orgs/TeamBiscochito/projects/1" class="verProyecto" target="_blank">Haga clic para ver el progreso del proyecto</a></p>
     <div class="container">
         <section class="tabs slideanim">
             <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked"/>
@@ -804,114 +892,20 @@ if (isset($_POST['submit'])) {
     </div>
 </section>
 <!-- /Our History -->
-<!--    <section class="map">-->
-<!--        <div class="container-fluid">-->
-<!--            <div class="row">-->
-<!--                <div class="col-lg-12 slideanim">-->
-<!--                    <iframe class="googlemaps"-->
-<!--                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12718.565692904409!2d-3.5911843!3d37.1612249!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5cc395f96e47c0d9!2sIES%20Zaid%C3%ADn%20Vergeles!5e0!3m2!1ses!2ses!4v1611310581574!5m2!1ses!2ses"-->
-<!--                            style="border:0" allowfullscreen></iframe>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-<!-- /google map -->
-<!-- contact section -->
-<div class="slide story" id="slide-6" data-slide="6">
-    <section class="our-contacts slideanim" id="contact">
-        <h3 class="slideanim">¡ Contacta con nosotros !</h3>
-        <div class="container">
-            <hr>
-        </div>
-        <p class="text-center slideanim">Si tienes algún problema en el juego o quieres sugerir algún cambio o
-            añadir cosas a la aplicación, no dudes en contactarnos</p>
-        <div class="container">
+    <section class="map">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 slideanim">
-                    <form role="form">
-                        <div class="row">
-                            <div class="form-group col-lg-4">
-                                <input type="text" name="Name" class="form-control user-name"
-                                       placeholder="Tu nombre" required/>
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <input type="email" name="Email" class="form-control mail" placeholder="Tu Correo"
-                                       required/>
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <input type="tel" name="Phone" class="form-control pno"
-                                       placeholder="Tu número de teléfono" required/>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="form-group col-lg-12">
-                                    <textarea class="form-control" name="Message" rows="6"
-                                              placeholder="Breve descripción de que es lo que propones, quieras mejorar, soluciones..."
-                                              required></textarea>
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <button type="submit" href="#" class="btn-outline">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
+                    <iframe class="googlemaps"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12718.565692904409!2d-3.5911843!3d37.1612249!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5cc395f96e47c0d9!2sIES%20Zaid%C3%ADn%20Vergeles!5e0!3m2!1ses!2ses!4v1611310581574!5m2!1ses!2ses"
+                            style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
-</div>
+<!-- /google map -->
+<!-- contact section -->
+
 <!-- /contact section -->
 <?php require_once('footer.php') ?>
 <?php require_once('scripts.php') ?>
-<div class="row">
-    <?php
-    while ($resultset = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        echo "<div class='col-12 col-sm-6 col-lg-3'>";
-        echo "<div class=hovereffect>";
-        $query = "select * from pregunta where card_id = :idcard";
-        $st = $con->prepare($query);
-        $st->execute(array(":idcard" => $resultset['id']));
-        echo "<img src=\"img/" . $resultset['picUrl'] . "\" class=w-100 alt=\"" . $resultset['picUrl'] . "\" >";
-        echo "<div class=overlay>";
-        echo '<h2 style="font-weight: bold">' . $resultset['name'] . '</h2>';
-        echo "<p>";
-        //                                echo '<p>' . $resultset['description'] . '</p>';
-        if ($st->rowCount() > 0) {
-            while ($rs = $st->fetch(PDO::FETCH_ASSOC)) {
-                echo "<p style='font-weight: bold'>" . "<span style='color: black'>" . ucfirst($rs['question']) . ":</span> " . $rs['answer'] . $rs['magnitude'] . " </p>";
-            }
-        }
-        echo "</p>";
-        echo "</div>";
-        echo "</div>";
-        echo "</div>";
-    }
-    ?>
-</div>
-
-<div class="flexboxWrap">
-    <style>
-        .flexboxWrap {
-            background: gray;
-            width: 100%;
-            height: 400px; /* height given for illustration */
-            display: flex;
-            flex-flow: row wrap;
-            position: relative;
-            justify-content: center;
-            margin: 40px;
-        }
-
-        .itemFlex {
-            background: blue;
-            margin: 4px;
-            flex: 0 1 calc(20% - 8px); /* <-- adjusting for margin */
-        }
-    </style>
-
-    <div class="itemFlex" style="background-image: url('images/1.jpg') "></div>
-    <div class="itemFlex" style="background-image: url('images/1.jpg') "></div>
-    <div class="itemFlex" style="background-image: url('images/1.jpg') "></div>
-    <div class="itemFlex" style="background-image: url('images/1.jpg') "></div>
-    <div class="itemFlex" style="background-image: url('images/1.jpg') "></div>
-
-
-</div>
