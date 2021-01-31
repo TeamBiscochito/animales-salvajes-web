@@ -22,15 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="BD Versión gabri">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="nueva paginación y slider (falta mejorar)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Arthdrag.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/DDI.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/kda-all-out-seraphine-lol-splash-art-uhdpaper.com-hd-7.2954.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/dreamslider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/dreamslider.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612045927955</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="nueva paginación y slider (falta mejorar)">
+      <created>1612072906021</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612072906021</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +195,8 @@
     <MESSAGE value="Añadir favicon (todos los dispositivos)" />
     <MESSAGE value="Footer modificado, agregado varias versiones slider, javascript de validación de campos y php para campos existentes (versión php antigua)" />
     <MESSAGE value="BD Versión gabri" />
-    <option name="LAST_COMMIT_MESSAGE" value="BD Versión gabri" />
+    <MESSAGE value="nueva paginación y slider (falta mejorar)" />
+    <option name="LAST_COMMIT_MESSAGE" value="nueva paginación y slider (falta mejorar)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="712" y="329" key="#Images" timestamp="1611323260966">

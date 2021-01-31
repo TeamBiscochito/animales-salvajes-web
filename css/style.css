@@ -3299,3 +3299,14 @@ section.footer .footer-address p.mail {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
+
+.imgPrueba {
+    flex:50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#slide-3 .col-12 {
+    width: 100%;
+}

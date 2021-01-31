@@ -333,7 +333,7 @@ if (isset($_POST['submit'])) {
                     $query = "select * from pregunta where card_id = :idcard";
                     $st = $con->prepare($query);
                     $st->execute(array(":idcard" => $resultset['id']));
-                    echo "<img src=\"img/" . $resultset['picUrl'] . "\" class=w-100 alt=\"" . $resultset['picUrl'] . "\" >";
+                    echo "<img src=\"img/" . $resultset['picUrl'] . "\" class=imgPrueba alt=\"" . $resultset['picUrl'] . "\" >";
                     echo "<div class=overlay>";
                     echo '<h2 style="font-weight: bold">' . $resultset['name'] . '</h2>';
                     echo "<p>";
