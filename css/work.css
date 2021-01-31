@@ -229,6 +229,11 @@ figcaption span a:hover {
     border-radius: 10px;
     background-color: #C4290D
 }
+::-moz-scrolled-page-sequence {
+
+}
+
+
 
 @-webkit-keyframes slideOut {
     0% {

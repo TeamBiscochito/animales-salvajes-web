@@ -22,7 +22,7 @@ caption, th {
 
 
 q:before, q:after {
-    content:;
+    content:"";
 }
 
 abbr, acronym {
@@ -73,7 +73,7 @@ abbr, acronym {
     height: 100%;
     background: #000;
     opacity: 0.7;
-    fliter: alpha(opacity=70);
+    alpha(opacity = 70);
     z-index: 9998;
     position: fixed;
     top: 0;

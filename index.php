@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
     $velocidadmag = $_POST['velocidadmag'];
     $descripcion = $_POST['mensaje'];
 
-    $q = "select * from carta where nombre = :nombre";
+    $q = "select * from carta where name = :nombre";
     $s = $con->prepare($q);
     $s->execute(array("nombre" => $nombre));
 
@@ -67,13 +67,13 @@ if (isset($_POST['submit'])) {
         $mensajeError = "La carta se ha subido satisfactoriamente";
         $error = 0;
 
-        $sql = "insert into carta values(null, :nombre, :descripcion, :imagen )";
+        $sql = "insert into carta values(null, :imagen, :nombre, :descripcion  )";
         $stmt = $con->prepare($sql);
 
         $stmt->execute(array(":nombre" => $nombre, ":descripcion" => $descripcion, ":imagen" => $img));
 
 
-        $query = "select id from carta where nombre = :nombre";
+        $query = "select id from carta where name = :nombre";
         $st = $con->prepare($query);
         $st->execute(array(":nombre" => $nombre));
         $rs = $st->fetch(PDO::FETCH_ASSOC);
@@ -292,6 +292,32 @@ if (isset($_POST['submit'])) {
     <!-- Portfolio Section -->
     <!-- === SLide 3 - Portfolio -->
     <div class="slide story" id="slide-3" data-slide="3">
+        <?php
+        if (isset($_GET['pag'])) {
+            $actual = $_GET['pag'];
+            if ($actual < 1) {
+                $actual = 1;
+            }
+        } else {
+            $actual = 1;
+        }
+
+        // Hay que coger cuantas cartas hay para ver
+        $sql = "select * from carta";
+        $stmt = $con->prepare($sql);
+        $stmt->execute();
+
+        $consulta = "select COUNT(*) from carta";
+        $statement = $con->prepare($sql);
+        $statement->execute();
+
+        $tuplas = $statement->rowCount();
+        $pags = ceil($tuplas / 5);
+
+        $sql = "select * from carta limit 5 offset " . (($actual - 1) * 5);
+        $stmt = $con->prepare($sql);
+        $stmt->execute();
+        ?>
         <section class="gallery slideanim">
             <h3 class="text-center slideanim">Nuestra galería de cartas</h3>
             <div class="container">
@@ -299,7 +325,23 @@ if (isset($_POST['submit'])) {
             </div>
             <p class="text-center slideanim">Conjunto de todas las cartas que poseemos actualmente</p>
             <div class="container">
-                <div class="im_wrapper">
+                <div class="im_wrapper" >
+                    <?php
+                    while ($resultset = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        $query = "select * from pregunta where card_id = :idcard";
+                        $st = $con->prepare($query);
+                        $st->execute(array(":idcard" => $resultset['id']));
+                        //                        echo '<p>Nombre:' . $resultset['name'] . '</p>';
+                        //                        echo '<p>' . $resultset['description'] . '</p>';
+                        echo "<div><img src=\"img/" . $resultset['picUrl'] . "\" class=img-responsive alt=\"" . $resultset['picUrl'] . "\" ></div>";
+                        if ($st->rowCount() > 0) {
+                            while ($rs = $st->fetch(PDO::FETCH_ASSOC)) {
+                                //                                echo "<p>" . $rs['question'] . ": " . $rs['answer'] . $rs['magnitude'] . " </p>";
+                            }
+                        }
+                        //                        echo "<br/> <br/> <br/> <br/> <br/>";
+                    }
+                    ?>
                     <div><img src="images/1.jpg" class="img-responsive" alt=""/></div>
                     <div><img src="images/2.jpg" class="img-responsive" alt=""/></div>
                     <div><img src="images/3.jpg" class="img-responsive" alt=""/></div>
@@ -333,7 +375,6 @@ if (isset($_POST['submit'])) {
                     <div><img src="images/10.jpg" class="img-responsive" alt=""/></div>
                     <div><img src="images/6.jpg" class="img-responsive" alt=""/></div>
                     <div><img src="images/3.jpg" class="img-responsive" alt=""/></div>
-                    <div><img src="images/8.jpg" class="img-responsive" alt=""/></div>
                 </div>
             </div>
         </section>

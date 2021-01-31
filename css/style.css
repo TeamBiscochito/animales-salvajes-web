@@ -4,6 +4,11 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 /*-- reset code --*/
+
+:root {
+    scrollbar-color: rgb(210,210,210) rgb(46,54,69) !important;
+    scrollbar-width: thin !important;
+}
 body {
     padding: 0;
     margin: 0;
@@ -2230,7 +2235,7 @@ section.footer .footer-address p.mail {
 
 @media (max-width: 1280px) {
     .im_wrapper {
-        margin-left: -130px;
+        margin-left: -50px;
     }
 }
 
