@@ -146,7 +146,6 @@ figcaption {
 }
 
 figcaption p {
-    line-height: 25px !important;
     font: bold 12px/18px "Arial", sans-serif;
     text-transform: uppercase;
     padding: 0 10px;

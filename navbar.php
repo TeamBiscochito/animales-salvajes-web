@@ -1,4 +1,4 @@
-<!-- Fixed navbar -->
+<!--suppress HtmlUnknownAnchorTarget -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -14,7 +14,7 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#slide-2">Nosotros</a></li>
+                <li><a href="#slide-2">Desarrollo</a></li>
                 <li><a href="#slide-3">Cartas</a></li>
                 <li><a href="#slide-4">Reseñas</a></li>
                 <li><a href="#slide-5">Añadir carta</a></li>
