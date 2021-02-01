@@ -128,7 +128,7 @@ abbr, acronym {
 #photoGallery-picWrapper .photoGallery-close-btn {
     width: 27px;
     height: 27px;
-    background: url(../images/close.png) no-repeat center center;
+    background: url(../images/close.png) round;
     position: absolute;
     right: 5px;
     top: 5px;

@@ -69,41 +69,32 @@
                 </ul>
             </div>
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-3 col-sm-6" style="height: 350px;">
             <div class="footer-gallery">
                 <h3 style="text-align: center; color:lime">Cartas recientes</h3>
                 <div id="photoGallery-container"
-                     style="margin: 0 auto;display: flex;flex-wrap: wrap;justify-content: center;">
+                     style="height: 70px;display: flex;flex-wrap: wrap;justify-content: center;">
                     <?php
-                    if (isset($_GET['pag'])) {
-                        $actual = $_GET['pag'];
-                        if ($actual < 1) {
-                            $actual = 1;
-                        }
-                    } else {
-                        $actual = 1;
-                    }
-
                     // Hay que coger cuantas cartas hay para ver
-                    $sql = "select * from carta";
+                    $sql = "select * from carta order by id";
 
                     /** @var PDO $con */
                     $stmt = $con->prepare($sql);
                     $stmt->execute();
 
-                    $consulta = "select COUNT(*) from carta";
+                    $consulta = "select COUNT(*) from carta order by id desc";
                     $statement = $con->prepare($sql);
                     $statement->execute();
 
                     $tuplas = $statement->rowCount();
                     $pags = ceil($tuplas / 12);
 
-                    $sql = "select * from carta limit 12";
+                    $sql = "select * from carta order by id desc limit 9";
                     $stmt = $con->prepare($sql);
                     $stmt->execute();
 
                     while ($resultset = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                        $query = "select * from pregunta where card_id = :idcard";
+                        $query = "select * from pregunta where card_id = :idcard order by id desc";
                         $st = $con->prepare($query);
                         $st->execute(array(":idcard" => $resultset['id']));
                         echo '<img class="photoGallery" data-src=img/'.$resultset['picUrl'].' src=img/'.$resultset['picUrl'].' data-id=img/'.$resultset['picUrl'].' data-desc='.$resultset['name'].'>';

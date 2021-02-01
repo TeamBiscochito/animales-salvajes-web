@@ -3296,6 +3296,7 @@ section.footer .footer-address p.mail {
     font-size: 20px;
     font-weight: bold;
 }
+
 .verProyecto:visited {
     color: #560056;
     text-decoration: none;
@@ -3304,4 +3305,29 @@ section.footer .footer-address p.mail {
 .verProyecto:hover, .verProyecto:link, .verProyecto:active {
     color: red;
     text-decoration: none;
+}
+
+html, body, .photoGallery {
+    height: 100%;
+    margin: 0;
+}
+
+.photoGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px 10px;
+}
+
+
+/* For presentation only, no need to copy the code below */
+.photoGallery * {
+    border: 1px solid red;
+    position: relative;
+}
+
+.photoGallery *:after {
+    position: absolute;
+    top: 0;
+    left: 0;
 }

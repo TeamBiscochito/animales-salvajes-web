@@ -106,9 +106,9 @@ if (isset($_POST['submit'])) {
         $stmt = $con->prepare($sql);
         $stmt->execute(array(":idcarta" => $id, ":pregunta" => 'poder', ":respuesta" => $poder, ":magnitud" => ""));
 
-        //        if ((move_uploaded_file($_FILES['imganimal']['tmp_name'], "img/" . $img))) {
-        //            echo "correcto";
-        //        }
+        if ((move_uploaded_file($_FILES['imganimal']['tmp_name'], "img/" . $img))) {
+            echo "";
+        }
     }
 }
 ?><!--suppress HtmlUnknownAnchorTarget --><!--suppress HtmlFormInputWithoutLabel -->
