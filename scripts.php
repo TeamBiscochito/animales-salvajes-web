@@ -19,7 +19,7 @@
 <script type="text/javascript" src="js/photoGallery.js"></script>
 <script type="text/javascript">
     $(function () {
-        var photoGallery = new PhotoGallery();
+        new PhotoGallery();
     });
 </script>
 <!-- js for footer pics -->
@@ -39,10 +39,10 @@
 <script>
     $(document).ready(function () {
         // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, section.footer a").on('click', function (event) {
+        $(".navbar a, section.footer a").on('click', function () {
 
             // Store hash
-            var hash = this.hash;
+            const hash = this.hash;
 
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
@@ -59,9 +59,9 @@
 <script>
     $(window).scroll(function () {
         $(".slideanim").each(function () {
-            var pos = $(this).offset().top;
+            const pos = $(this).offset().top;
 
-            var winTop = $(window).scrollTop();
+            const winTop = $(window).scrollTop();
             if (pos < winTop + 600) {
                 $(this).addClass("slide");
             }
@@ -87,4 +87,3 @@
     });
 </script>
 <!-- /js for pricing table -->
-</html>

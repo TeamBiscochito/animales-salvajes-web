@@ -43,4 +43,3 @@
 <!--    <link rel="icon" type="image/png" sizes="16x16" href="images/newImages/favicon/favicon-16x16.png">-->
     <link rel="icon" type="image/ico" sizes="32x32" href="images/newImages/favicon/favicon_2.ico">
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">

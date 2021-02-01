@@ -211,9 +211,7 @@ body {
 /*-- Top of About-Us --*/
 section.about-us {
     padding: 100px 0;
-    background: url(../images/about.jpg) no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background: url(../images/about.jpg) no-repeat fixed center;
     background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
@@ -305,7 +303,7 @@ section.about-us .about-details p {
 }
 
 .cs-style-5 figcaption {
-    height: 100%;
+    height: 90%;
     width: 100%;
     opacity: 0;
     -webkit-transform: scale(0.7);
@@ -318,6 +316,24 @@ section.about-us .about-details p {
     -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
     -moz-transition: -moz-transform 0.4s, opacity 0.4s;
     transition: transform 0.4s, opacity 0.4s;
+}
+
+@media (max-width: 980px)  {
+    .cs-style-5 figcaption {
+        height: 60%;
+    }
+}
+
+@media (max-width: 780px)  {
+    .cs-style-5 figcaption {
+        height: 90%;
+    }
+}
+
+@media (max-width: 450px)  {
+    .cs-style-5 figcaption {
+        height: 70%;
+    }
 }
 
 .no-touch .cs-style-5 figure:hover figcaption,

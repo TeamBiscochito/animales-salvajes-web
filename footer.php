@@ -1,4 +1,4 @@
-<!-- Footer section -->
+<!-- Footer section --><!--suppress HtmlUnknownAnchorTarget -->
 <?php require_once('config.php');?>
 <section class="footer" id="footer">
     <div class="container">
@@ -86,6 +86,8 @@
 
                     // Hay que coger cuantas cartas hay para ver
                     $sql = "select * from carta";
+
+                    /** @var PDO $con */
                     $stmt = $con->prepare($sql);
                     $stmt->execute();
 
@@ -124,4 +126,3 @@
     </div>
 </section>
 <!-- /Footer section -->
-</body>
