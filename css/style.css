@@ -1147,11 +1147,11 @@ input#datepicker {
 .text-box-dark {
 }
 
-.text-box-light {
-    background: url(../images/calender.png) no-repeat 95% 50%;
-    cursor: pointer;
-    position: relative;
-}
+/*.text-box-light {*/
+/*    background: url(../images/calender.png) no-repeat 95% 50%;*/
+/*    cursor: pointer;*/
+/*    position: relative;*/
+/*}*/
 
 .payment-online-form-left ul li:first-child input[type="number"], .payment-online-form-left ul li:first-child input[type="text"], #mensaje {
     margin-right: 5%;
@@ -1177,9 +1177,9 @@ input#datepicker {
     background: url(../images/icon.png) no-repeat -154px -23px;
 }
 
-.payment-date-section {
-    background: url(../images/calender.png) no-repeat #fff 50%;
-}
+/*.payment-date-section {*/
+/*    background: url(../images/calender.png) no-repeat #fff 50%;*/
+/*}*/
 
 .payment-sendbtns {
     float: right;

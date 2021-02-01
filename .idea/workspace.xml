@@ -26,10 +26,52 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="reorganización de código de estilos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="estilos organizados v2">
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/about-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/calender.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/footer-pic1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/footer-pic10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/footer-pic11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/footer-pic12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/footer-pic2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/footer-pic3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/footer-pic4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/footer-pic5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/footer-pic6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/footer-pic7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/footer-pic8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/footer-pic9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/image2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/image3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/image4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/newImages/ourWork1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/newImages/tucan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/next2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/prev2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/transparent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/work10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/work11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/work12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/work13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/work14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/work15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/work7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/work8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/work9.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +145,7 @@
       <workItem from="1612091932465" duration="15000" />
       <workItem from="1612133496934" duration="1977000" />
       <workItem from="1612135511929" duration="21000" />
-      <workItem from="1612135538939" duration="4224000" />
+      <workItem from="1612135538939" duration="4666000" />
     </task>
     <task id="LOCAL-00001" summary="estilos modificados y ordenados (fallos)">
       <created>1611251332963</created>
@@ -210,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612138712291</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="estilos organizados v2">
+      <created>1612139809330</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1612139809330</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +294,8 @@
     <MESSAGE value="Arreglos de redireciones de página, favicon, footer.php con imágenes añadidas arregladas, estilos varios arreglados..." />
     <MESSAGE value="cambios y reorganización de código y documentación de PHP" />
     <MESSAGE value="reorganización de código de estilos" />
-    <option name="LAST_COMMIT_MESSAGE" value="reorganización de código de estilos" />
+    <MESSAGE value="estilos organizados v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="estilos organizados v2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="712" y="329" key="#Images" timestamp="1611323260966">
@@ -272,10 +322,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" width="1092" height="766" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611308316860" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612045820723">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612140164850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612045820723" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612140164850" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1612139485109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
