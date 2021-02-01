@@ -799,7 +799,8 @@ if (isset($_POST['submit'])) {
                                               required></textarea>
                                 </div>
                                 <div class="form-group col-lg-12">
-                                    <button type="submit" href="#" class="btn-outline" name="email" id="email">Enviar
+                                    <button type="submit" href="#slide-6" class="btn-outline" name="email" id="email">
+                                        Enviar
                                     </button>
                                 </div>
                             </div>
