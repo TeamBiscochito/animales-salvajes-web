@@ -1,13 +1,14 @@
-/*! Copyright (c) 2013 Brandon Aaron (http://brandonaaron.net)
- * Licensed under the MIT License (LICENSE.txt).
+/*
+ * Copyright (c) 2021. Team Biscochito.
  *
- * Thanks to: http://adomas.org/javascript-mouse-wheel/ for some pointers.
- * Thanks to: Mathias Bank(http://www.mathias-bank.de) for a scope bug fix.
- * Thanks to: Seamus Leahy for adding deltaX and deltaY
+ * Licensed under the GNU General Public License v3.0
  *
- * Version: 3.1.3
+ * https://www.gnu.org/licenses/gpl-3.0.html
  *
- * Requires: 1.2.2+
+ * Permissions of this strong copyleft license are conditioned on making available complete
+ * source code of licensed works and modifications, which include larger works using a licensed
+ * work, under the same license. Copyright and license notices must be preserved. Contributors
+ * provide an express grant of patent rights.
  */
 
 (function (factory) {

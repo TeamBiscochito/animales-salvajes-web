@@ -1,3 +1,16 @@
+/*
+ * Copyright (c) 2021. Team Biscochito.
+ *
+ * Licensed under the GNU General Public License v3.0
+ *
+ * https://www.gnu.org/licenses/gpl-3.0.html
+ *
+ * Permissions of this strong copyleft license are conditioned on making available complete
+ * source code of licensed works and modifications, which include larger works using a licensed
+ * work, under the same license. Copyright and license notices must be preserved. Contributors
+ * provide an express grant of patent rights.
+ */
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -97,44 +110,44 @@ abbr, acronym {
     right: 0;
 }
 
-#photoGallery-mask .photoGallery-prev-btn-show {
-    background: url(../images/prev.png) no-repeat left center;
-    cursor: pointer;
-}
+/*#photoGallery-mask .photoGallery-prev-btn-show {*/
+/*    background: url(../images/prev.png) no-repeat left center;*/
+/*    cursor: pointer;*/
+/*}*/
 
-#photoGallery-mask .photoGallery-next-btn-show {
-    background: url(../images/next.png) no-repeat right center;
-    cursor: pointer;
-}
+/*#photoGallery-mask .photoGallery-next-btn-show {*/
+/*    background: url(../images/next.png) no-repeat right center;*/
+/*    cursor: pointer;*/
+/*}*/
 
-#photoGallery-picWrapper {
-    width: 800px;
-    height: 500px;
-    background: #fff url(../images/loading.gif) no-repeat center center;
-    border: 5px solid #fff;
-    border-radius: 5px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-left: -400px;
-    margin-top: -250px;
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
-    z-index: 9999;
-    display: none;
-}
+/*#photoGallery-picWrapper {*/
+/*    width: 800px;*/
+/*    height: 500px;*/
+/*    background: #fff url(../images/loading.gif) no-repeat center center;*/
+/*    border: 5px solid #fff;*/
+/*    border-radius: 5px;*/
+/*    position: fixed;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    margin-left: -400px;*/
+/*    margin-top: -250px;*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+/*    font-size: 16px;*/
+/*    z-index: 9999;*/
+/*    display: none;*/
+/*}*/
 
-#photoGallery-picWrapper .photoGallery-close-btn {
-    width: 27px;
-    height: 27px;
-    background: url(../images/close.png) no-repeat center center;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    z-index: 3;
-    cursor: pointer;
-}
+/*#photoGallery-picWrapper .photoGallery-close-btn {*/
+/*    width: 27px;*/
+/*    height: 27px;*/
+/*    background: url(../images/close.png) no-repeat center center;*/
+/*    position: absolute;*/
+/*    right: 5px;*/
+/*    top: 5px;*/
+/*    z-index: 3;*/
+/*    cursor: pointer;*/
+/*}*/
 
 #photoGallery-picWrapper .photoGallery-picCon {
     width: 100%;

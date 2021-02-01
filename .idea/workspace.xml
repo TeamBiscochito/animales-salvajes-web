@@ -26,10 +26,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="clean project">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85cd4c81-f418-49b7-800d-1c4f8049cd31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/85cd4c81-f418-49b7-800d-1c4f8049cd31.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBConnection.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBConnection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/banner.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/banner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/photoGallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/photoGallery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/work.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/work.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/newImages/favicon/browserconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/images/newImages/favicon/browserconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/classie.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/classie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.magnific-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.magnific-popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.mousewheel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.mousewheel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/photoGallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/photoGallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/validacion.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/validacion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/work.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/work.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +65,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Oleg37 &lt;iofernandezllebrez134@ieszaidinvergeles.org&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="gh-pages" />
@@ -56,6 +79,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/css/dreamslider.min.css" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="NamedScopeManager">
     <scope name="Local" pattern="file[pruebagitweb]:*/" />
@@ -73,7 +107,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last.edited.regexp" value="Tortuga m." />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -234,11 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612140376215</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="clean project">
+      <created>1612141639671</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1612141639671</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -253,6 +310,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="estilos modificados y ordenador (fallos)" />
     <MESSAGE value="estilos modificados y ordenados (fallos)" />
     <MESSAGE value="add php files + paginación (con iFrame)" />
@@ -272,6 +330,9 @@
     <MESSAGE value="estilos organizados v2" />
     <MESSAGE value="clean project" />
     <option name="LAST_COMMIT_MESSAGE" value="clean project" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="439" y="178" key="#Deployment" timestamp="1612141398261">
@@ -306,10 +367,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612140164850" />
-    <state x="361" y="88" width="1134" height="871" key="CommitChangelistDialog2" timestamp="1612141508794">
+    <state x="718" y="399" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1612141925917">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="361" y="88" width="1134" height="871" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612141508794" />
+    <state x="718" y="399" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612141925917" />
+    <state x="361" y="88" width="1134" height="871" key="CommitChangelistDialog2" timestamp="1612141638989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="361" y="88" width="1134" height="871" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612141638989" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1612139485109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -362,18 +427,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="697" y="222" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612060371315" />
-    <state x="508" y="220" key="SettingsEditor" timestamp="1612141570941">
+    <state x="508" y="220" key="SettingsEditor" timestamp="1612141841994">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="508" y="220" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612141570941" />
+    <state x="508" y="220" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612141841994" />
     <state width="263" height="441" key="SqlResolveConfigurable" timestamp="1611913243977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="263" height="441" key="SqlResolveConfigurable/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1611913243977" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1612140528911">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1612141974166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612140528911" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612141974166" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1612141612694">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612141612694" />
     <state x="838" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1612047945555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
