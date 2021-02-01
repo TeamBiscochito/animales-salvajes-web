@@ -1649,8 +1649,12 @@
     <table id="513" parent="5" name="pma__users">
       <Comment>Users and their assignments to user groups</Comment>
     </table>
-    <table id="514" parent="7" name="carta"/>
-    <table id="515" parent="7" name="pregunta"/>
+    <table id="514" parent="7" name="carta">
+      <Collation>utf8mb4_spanish_ci</Collation>
+    </table>
+    <table id="515" parent="7" name="pregunta">
+      <Collation>utf8mb4_spanish_ci</Collation>
+    </table>
     <column id="516" parent="335" name="PLUGIN_NAME">
       <Position>1</Position>
       <DataType>varchar(64)|0s</DataType>
@@ -11474,16 +11478,19 @@ usergroup</ColNames>
       <Position>2</Position>
       <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
+      <Collation>utf8mb4_unicode_ci</Collation>
     </column>
     <column id="2513" parent="514" name="name">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
+      <Collation>utf8mb4_unicode_ci</Collation>
     </column>
     <column id="2514" parent="514" name="description">
       <Position>4</Position>
       <DataType>varchar(500)|0s</DataType>
       <NotNull>1</NotNull>
+      <Collation>utf8mb4_unicode_ci</Collation>
     </column>
     <index id="2515" parent="514" name="carta_picurl_unique">
       <ColNames>picUrl</ColNames>
@@ -11514,6 +11521,7 @@ usergroup</ColNames>
       <Position>3</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
+      <Collation>utf8mb4_unicode_ci</Collation>
     </column>
     <column id="2521" parent="515" name="answer">
       <Position>4</Position>
@@ -11524,6 +11532,7 @@ usergroup</ColNames>
       <Position>5</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
+      <Collation>utf8mb4_unicode_ci</Collation>
     </column>
     <key id="2523" parent="515" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
