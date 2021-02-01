@@ -26,26 +26,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="Arreglos de redireciones de página, favicon, footer.php con imágenes añadidas arregladas, estilos varios arreglados...">
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/Copyright_Team___Biscochito.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Keyster.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DBConnection.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBConnection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+    <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="cambios y reorganización de código y documentación de PHP">
+      <change beforePath="$PROJECT_DIR$/css/banner.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/banner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/photoGallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/photoGallery.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labels.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/labels.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paginacion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prueba.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/work.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/work.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +104,7 @@
       <workItem from="1612091932465" duration="15000" />
       <workItem from="1612133496934" duration="1977000" />
       <workItem from="1612135511929" duration="21000" />
-      <workItem from="1612135538939" duration="2209000" />
+      <workItem from="1612135538939" duration="2940000" />
     </task>
     <task id="LOCAL-00001" summary="estilos modificados y ordenados (fallos)">
       <created>1611251332963</created>
@@ -212,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612132110137</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="cambios y reorganización de código y documentación de PHP">
+      <created>1612137877830</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1612137877830</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +237,8 @@
     <MESSAGE value="faltan estilos (mejorar paginación)" />
     <MESSAGE value="imagenes eliminadas" />
     <MESSAGE value="Arreglos de redireciones de página, favicon, footer.php con imágenes añadidas arregladas, estilos varios arreglados..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Arreglos de redireciones de página, favicon, footer.php con imágenes añadidas arregladas, estilos varios arreglados..." />
+    <MESSAGE value="cambios y reorganización de código y documentación de PHP" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios y reorganización de código y documentación de PHP" />
   </component>
   <component name="WindowStateProjectService">
     <state x="712" y="329" key="#Images" timestamp="1611323260966">

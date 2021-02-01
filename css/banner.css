@@ -84,7 +84,7 @@ body {
     font-size: 10px;
     font-style: normal;
     font-weight: normal;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: white;
     position: absolute;
     bottom: 15px;
@@ -192,12 +192,12 @@ body {
     display: none;
     font-style: normal;
     font-weight: bold;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: black;
     float: left;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
-    padding: 0px 0px 5px 0px;
+    padding: 0 0 5px 0;
 }
 
 #content #slider .navigation ul li .li__info h4,
@@ -205,7 +205,7 @@ body {
     font-size: 18px;
     font-style: normal;
     font-weight: bold;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: black;
     float: left;
     padding-left: 6px;
@@ -213,7 +213,7 @@ body {
 }
 
 #content #slider .navigation ul li .li__info-mask {
-    width: 0%;
+    width: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -233,7 +233,7 @@ body {
 }
 
 #content #slider .navigation ul li .li__hoverLine .l {
-    width: 0%;
+    width: 0;
     height: 1px;
     background: black;
     margin: 0 auto;
