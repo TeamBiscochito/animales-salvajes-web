@@ -13,6 +13,7 @@
 
 <!--suppress HtmlUnknownAnchorTarget --><!--suppress HtmlFormInputWithoutLabel -->
 <!--suppress HtmlFormInputWithoutLabel -->
+<!doctype html>
 <html lang="es">
 <?php
 
@@ -22,7 +23,6 @@ require_once('config.php');
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-require_once('navbar.php');
 $corregir = false;
 $mensajeError = "";
 $mensajeError2 = "";
@@ -127,6 +127,7 @@ if (isset($_POST['submit'])) {
 ?><!--suppress HtmlUnknownAnchorTarget --><!--suppress HtmlFormInputWithoutLabel -->
 <!--suppress HtmlFormInputWithoutLabel -->
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <?php require_once('navbar.php'); ?>
     <!-- Ban -->
     <div class="slide story" id="slide-1" xmlns="http://www.w3.org/1999/html">
         <div id="content">

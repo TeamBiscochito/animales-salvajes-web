@@ -28,25 +28,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DBConnection.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBConnection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/banner.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/banner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/photoGallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/photoGallery.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/work.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/work.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/newImages/favicon/browserconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/images/newImages/favicon/browserconfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/banner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/classie.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/classie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.magnific-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.magnific-popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.mousewheel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.mousewheel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/photoGallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/photoGallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/validacion.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/validacion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/work.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/work.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +51,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Oleg37 &lt;iofernandezllebrez134@ieszaidinvergeles.org&gt;copyright update" />
         <option value="Oleg37 &lt;iofernandezllebrez134@ieszaidinvergeles.org&gt;" />
       </list>
     </option>
@@ -133,10 +118,18 @@
       <recent name="C:\Users\Keyster\Desktop\pruebagitweb\js" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Built-in Web Server.PHP BIWS">
+    <configuration name="jquery-1.10.2.min.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/jquery-1.10.2.min.js" working-dir="$PROJECT_DIR$/js">
+      <method v="2" />
+    </configuration>
     <configuration name="PHP BIWS" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.jquery-1.10.2.min.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="1" Folder0="H:\SpellChecker-Dict-Spanish\src\dict" CustomDictionaries="1" CustomDictionary0="H:\SpellChecker-Dict-Spanish\src\dict\spanish.dic" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -154,6 +147,7 @@
       <workItem from="1612133496934" duration="1977000" />
       <workItem from="1612135511929" duration="21000" />
       <workItem from="1612135538939" duration="4974000" />
+      <workItem from="1612143037653" duration="943000" />
     </task>
     <task id="LOCAL-00001" summary="estilos modificados y ordenados (fallos)">
       <created>1611251332963</created>
@@ -288,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612141639671</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="update copyright">
+      <created>1612142265540</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1612142265540</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +330,8 @@
     <MESSAGE value="reorganización de código de estilos" />
     <MESSAGE value="estilos organizados v2" />
     <MESSAGE value="clean project" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean project" />
+    <MESSAGE value="update copyright" />
+    <option name="LAST_COMMIT_MESSAGE" value="update copyright" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -371,10 +373,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="399" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612141925917" />
-    <state x="361" y="88" width="1134" height="871" key="CommitChangelistDialog2" timestamp="1612141638989">
+    <state x="361" y="88" width="1134" height="871" key="CommitChangelistDialog2" timestamp="1612142264654">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="361" y="88" width="1134" height="871" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612141638989" />
+    <state x="361" y="88" width="1134" height="871" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612142264654" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1612139485109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -439,10 +441,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612141974166" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1612141612694">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1612142278154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612141612694" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612142278154" />
     <state x="838" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1612047945555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -459,10 +461,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612140451937" />
-    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1612135978730">
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1612143718366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612135978730" />
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612143718366" />
     <state x="740" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611581422904">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

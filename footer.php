@@ -12,7 +12,7 @@
   -->
 
 <!-- Footer section --><!--suppress HtmlUnknownAnchorTarget -->
-<?php require_once('config.php');?>
+<?php require_once('config.php'); ?>
 <section class="footer" id="footer">
     <div class="container">
         <div class="col-lg-3 col-sm-6">
@@ -73,8 +73,8 @@
                     </li>
 
                     <li style="padding: 0;display: flex;">
-                        <a <a href="mailto:help@TeamBiscochito.com"
-                              style="justify-content: revert;flex-direction: column;text-align: center;">
+                        <a href="mailto:help@TeamBiscochito.com"
+                           style="justify-content: revert;flex-direction: column;text-align: center;">
                             <span class="icon icon-envelope" style="margin: 5px;"></span>help@TeamBiscochito.com<span
                                     class="icon icon-envelope" style="margin: 5px;"></span>
                         </a>
@@ -119,7 +119,7 @@
                         $query = "select * from pregunta where card_id = :idcard";
                         $st = $con->prepare($query);
                         $st->execute(array(":idcard" => $resultset['id']));
-                        echo '<img class="photoGallery" data-src=img/'.$resultset['picUrl'].' src=img/'.$resultset['picUrl'].' data-id=img/'.$resultset['picUrl'].' data-desc='.$resultset['name'].'>';
+                        echo '<img class="photoGallery" data-src=img/' . $resultset['picUrl'] . ' src=img/' . $resultset['picUrl'] . ' data-id=img/' . $resultset['picUrl'] . ' data-desc=' . $resultset['name'] . '>';
                     }
                     ?>
                 </div>
@@ -132,7 +132,8 @@
             <div class="col-lg-12">
                 <div class="copyright">
                     <p class="text-center">© 2021 Animales Salvajes. Todos los derechos reservados | Design by <a
-                                href="https://github.com/TeamBiscochito" target="_blank" style="color: cyan">Team Biscochito</a></p>
+                                href="https://github.com/TeamBiscochito" target="_blank" style="color: cyan">Team
+                            Biscochito</a></p>
                 </div>
             </div>
         </div>

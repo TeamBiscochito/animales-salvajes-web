@@ -29,12 +29,12 @@
 <script src="js/work.js"></script>
 <!-- /js for works section -->
 <!-- js for footer pics -->
-<script type="text/javascript" src="js/photoGallery.js"></script>
-<script type="text/javascript">
-    $(function () {
-        new PhotoGallery();
-    });
-</script>
+<!--<script type="text/javascript" src="js/photoGallery.js"></script>-->
+<!--<script type="text/javascript">-->
+<!--    $(function () {-->
+<!--        new PhotoGallery();-->
+<!--    });-->
+<!--</script>-->
 <!-- js for footer pics -->
 <!-- js for gallery -->
 <script type="text/javascript" src="js/dreamslider.min.js"></script>
