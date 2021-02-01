@@ -336,7 +336,7 @@ if (isset($_POST['submit'])) {
                     <?php
                     while ($resultset = $stmt->fetch(PDO::FETCH_ASSOC)) {
                         echo "<div class='col-12 col-sm-6 col-lg-3'>";
-                        echo "<div class=hovereffect>";
+                        echo "<div class=hoverEffect>";
                         $query = "select * from pregunta where card_id = :idcard";
                         $st = $con->prepare($query);
                         $st->execute(array(":idcard" => $resultset['id']));

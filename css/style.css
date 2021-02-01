@@ -89,7 +89,6 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
@@ -114,7 +113,6 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
     content: none;
 }
 
@@ -268,6 +266,7 @@ section.about-us .about-details p {
     color: #ed4e6e;
 }
 
+/*noinspection CssFloatPxLength*/
 .grid figcaption h4 {
     margin: 0;
     padding-top: 7px;
@@ -563,7 +562,7 @@ span.icon.icon-power-off {
     text-align: center;
 }
 
-.grid1 {
+.grid1, .grid2 {
     width: 32%;
     float: left;
     margin-right: 2%;
@@ -584,7 +583,7 @@ span.icon.icon-power-off {
 /*    -ms-transition: 0.5s all;*/
 /*}*/
 
-.grid1 span {
+.grid1 span, .grid3 span {
     position: absolute;
     top: -25%;
     height: 92px;
@@ -619,7 +618,7 @@ span.icon.icon-power-off {
     text-align: center;
 }
 
-.grid1 .sign a {
+.grid1 .sign a, .grid3 .sign a {
     display: inline-block;
     padding: 10px 70px;
     font-size: 1.1em;
@@ -638,18 +637,6 @@ span.icon.icon-power-off {
 /*    background: #325F32;*/
 /*}*/
 
-.grid2 {
-    width: 32%;
-    float: left;
-    margin-right: 2%;
-    background-color: rgba(0, 0, 0, 0.38);
-    position: relative;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-}
 
 .grid2:hover {
     transition: 0.5s all;
@@ -693,10 +680,10 @@ span.icon.icon-power-off {
     padding: 1.5em 0;
     text-align: center;
 }
-
 .grid2 .sign a {
     display: inline-block;
     padding: 10px 70px;
+    background: #5cb85c;
     font-size: 1.1em;
     font-weight: 900;
     color: #FFF;
@@ -706,8 +693,9 @@ span.icon.icon-power-off {
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
-    background: #5cb85c;
+
 }
+
 
 .grid2 .sign a:hover {
     background: #325F32;
@@ -733,19 +721,7 @@ span.icon.icon-power-off {
 /*    -ms-transition: 0.5s all;*/
 /*}*/
 
-.grid3 span {
-    position: absolute;
-    top: -25%;
-    height: 92px;
-    line-height: 70px;
-    left: 0;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 900;
-    padding: 10px 30px;
-    background-color: rgba(0, 0, 0, 0.65);
-    width: 100%;
-}
+
 
 .grid3 h2 {
     text-align: center;
@@ -768,20 +744,7 @@ span.icon.icon-power-off {
     text-align: center;
 }
 
-.grid3 .sign a {
-    display: inline-block;
-    padding: 10px 70px;
-    font-size: 1.1em;
-    font-weight: 900;
-    color: #FFF;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    background: #5cb85c61;
-}
+
 
 /*.grid3 .sign a:hover {*/
 /*    background: #325F32;*/
@@ -1283,14 +1246,14 @@ button[name="submit"]:hover {
 }
 
 /*-----*/
-.get-started {
-    background: url(../images/get.jpg) no-repeat 0 0;
-    min-height: 400px;
-    padding: 8% 0 0 0;
-    color: #fff;
-    background-size: cover;
-    text-align: center;
-}
+/*.get-started {*/
+/*    background: url(../images/get.jpg) no-repeat 0 0;*/
+/*    min-height: 400px;*/
+/*    padding: 8% 0 0 0;*/
+/*    color: #fff;*/
+/*    background-size: cover;*/
+/*    text-align: center;*/
+/*}*/
 
 .get-started h4 {
     font-size: 1.5em;
@@ -1423,65 +1386,65 @@ input[type=checkbox].css-checkbox3, input[type=checkbox].css-checkbox4, input[ty
     display: none;
 }
 
-input[type=checkbox].css-checkbox3 + label.css-label3 {
-    height: 22px;
-    width: 21px;
-    display: inline-block;
-    line-height: 18px;
-    background-repeat: no-repeat;
-    background-position: 0 -38px;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: url(../images/filter-bg.png);
-}
+/*input[type=checkbox].css-checkbox3 + label.css-label3 {*/
+/*    height: 22px;*/
+/*    width: 21px;*/
+/*    display: inline-block;*/
+/*    line-height: 18px;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: 0 -38px;*/
+/*    vertical-align: middle;*/
+/*    cursor: pointer;*/
+/*    background-image: url(../images/filter-bg.png);*/
+/*}*/
 
 input[type=checkbox].css-checkbox3:checked + label.css-label3 {
-    background-position: 0px 0px;
+    background-position: 0 0;
 }
 
-input[type=checkbox].css-checkbox4 + label.css-label4 {
-    height: 22px;
-    width: 21px;
-    display: inline-block;
-    line-height: 18px;
-    background-repeat: no-repeat;
-    background-position: 0 0px;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: url(../images/filter-bg.png);
-}
+/*input[type=checkbox].css-checkbox4 + label.css-label4 {*/
+/*    height: 22px;*/
+/*    width: 21px;*/
+/*    display: inline-block;*/
+/*    line-height: 18px;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: 0 0px;*/
+/*    vertical-align: middle;*/
+/*    cursor: pointer;*/
+/*    background-image: url(../images/filter-bg.png);*/
+/*}*/
 
 input[type=checkbox].css-checkbox4:checked + label.css-label4 {
-    background-position: 0px -38px;
+    background-position: 0 -38px;
 }
 
-input[type=checkbox].css-checkbox5 + label.css-label5 {
-    height: 22px;
-    width: 21px;
-    display: inline-block;
-    line-height: 18px;
-    background-repeat: no-repeat;
-    background-position: 0 -38px;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: url(../images/filter-bg.png);
-}
+/*input[type=checkbox].css-checkbox5 + label.css-label5 {*/
+/*    height: 22px;*/
+/*    width: 21px;*/
+/*    display: inline-block;*/
+/*    line-height: 18px;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: 0 -38px;*/
+/*    vertical-align: middle;*/
+/*    cursor: pointer;*/
+/*    background-image: url(../images/filter-bg.png);*/
+/*}*/
 
 input[type=checkbox].css-checkbox5:checked + label.css-label5 {
     background-position: 0 0;
 }
 
-input[type=checkbox].css-checkbox6 + label.css-label6 {
-    height: 22px;
-    width: 21px;
-    display: inline-block;
-    line-height: 18px;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: url(../images/filter-bg.png);
-}
+/*input[type=checkbox].css-checkbox6 + label.css-label6 {*/
+/*    height: 22px;*/
+/*    width: 21px;*/
+/*    display: inline-block;*/
+/*    line-height: 18px;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: 0 0;*/
+/*    vertical-align: middle;*/
+/*    cursor: pointer;*/
+/*    background-image: url(../images/filter-bg.png);*/
+/*}*/
 
 input[type=checkbox].css-checkbox6:checked + label.css-label6 {
     background-position: 0 -38px;
@@ -1609,18 +1572,18 @@ input[type=checkbox].css-checkbox6:checked + label.css-label6 {
     cursor: progress;
 }
 
-.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-    cursor: -moz-zoom-out;
-    cursor: -webkit-zoom-out;
-    cursor: zoom-out;
-}
+/*.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {*/
+/*    cursor: -moz-zoom-out;*/
+/*    cursor: -webkit-zoom-out;*/
+/*    cursor: zoom-out;*/
+/*}*/
 
-.mfp-zoom {
-    cursor: pointer;
-    cursor: -webkit-zoom-in;
-    cursor: -moz-zoom-in;
-    cursor: zoom-in;
-}
+/*.mfp-zoom {*/
+/*    cursor: pointer;*/
+/*    cursor: -webkit-zoom-in;*/
+/*    cursor: -moz-zoom-in;*/
+/*    cursor: zoom-in;*/
+/*}*/
 
 .mfp-auto-cursor .mfp-content {
     cursor: auto;
@@ -3209,7 +3172,7 @@ section.footer .footer-address p.mail {
     height: 100%;
 }
 
-.hovereffect {
+.hoverEffect {
     width: 100%;
     float: left;
     overflow: hidden;
@@ -3222,7 +3185,7 @@ section.footer .footer-address p.mail {
     display: flex;
 }
 
-.hovereffect .overlay {
+.hoverEffect .overlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -3232,7 +3195,7 @@ section.footer .footer-address p.mail {
     /*padding: 50px 20px;*/
 }
 
-.hovereffect img {
+.hoverEffect img {
     display: block;
     position: relative;
     max-width: none;
@@ -3245,7 +3208,7 @@ section.footer .footer-address p.mail {
     backface-visibility: hidden;
 }
 
-.hovereffect:hover img, .hovereffect:focus img {
+.hoverEffect:hover img, .hoverEffect:focus img {
     opacity: 0.1;
     filter: alpha(opacity=10);
     -webkit-transform: translate3d(0, 0, 0);
@@ -3253,7 +3216,7 @@ section.footer .footer-address p.mail {
     /*transform: scale(3);*/
 }
 
-.hovereffect h2 {
+.hoverEffect h2 {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -3264,7 +3227,7 @@ section.footer .footer-address p.mail {
     background-color: transparent;
 }
 
-.hovereffect h2:after {
+.hoverEffect h2:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -3278,12 +3241,12 @@ section.footer .footer-address p.mail {
     transform: translate3d(-100%, 0, 0);
 }
 
-.hovereffect:hover h2:after, .hovereffect:focus h2:after {
+.hoverEffect:hover h2:after, .hoverEffect:focus h2:after {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
-.hovereffect a, .hovereffect p {
+.hoverEffect a, .hoverEffect p {
     color: #FFF;
     opacity: 0;
     filter: alpha(opacity=0);
@@ -3293,7 +3256,7 @@ section.footer .footer-address p.mail {
     transform: translate3d(100%, 0, 0);
 }
 
-.hovereffect:hover a, .hovereffect:hover p, .hovereffect:focus a, .hovereffect:focus p {
+.hoverEffect:hover a, .hoverEffect:hover p, .hoverEffect:focus a, .hoverEffect:focus p {
     opacity: 1;
     filter: alpha(opacity=100);
     -webkit-transform: translate3d(0, 0, 0);
