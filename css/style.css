@@ -11,11 +11,8 @@
  * provide an express grant of patent rights.
  */
 
-/*--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+/*http://w3layouts.com*/
+
 /*-- reset code --*/
 
 :root {
@@ -3192,7 +3189,7 @@ section.footer .footer-address p.mail {
     position: relative;
     text-align: center;
     cursor: default;
-    background: #42b078;
+    /*background: #42b078;*/
     margin-top: 10%;
     height: 250px;
     display: flex;
@@ -3274,6 +3271,10 @@ section.footer .footer-address p.mail {
     filter: alpha(opacity=100);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+}
+
+.hoverEffect:hover h2 {
+    color: black;
 }
 
 .imgPrueba {

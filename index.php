@@ -303,6 +303,18 @@ if (isset($_POST['submit'])) {
                             </figure>
                             <div class="date" style="width: 30%">2021-01-29</div>
                         </li>
+                        <!--                        <li class="item">-->
+                        <!--                            <figure>-->
+                        <!--                                <div class="view"><img src="images/newImages/ourWork8.png" alt=""/></div>-->
+                        <!--                                <figcaption>-->
+                        <!--                                    <p>-->
+                        <!--                                        <span><a href="https://github.com/TeamBiscochito/proyectofinal/releases/tag/v0.0.9"-->
+                        <!--                                                 target="_blank">Quinta versión v0.0.9</a></span></p>-->
+                        <!--                                    <p><span>Animales Salvajes</span></p>-->
+                        <!--                                </figcaption>-->
+                        <!--                            </figure>-->
+                        <!--                            <div class="date" style="width: 30%">2021-01-29</div>-->
+                        <!--                        </li>-->
                     </ul>
                 </div>
             </div><!-- /container -->
@@ -777,7 +789,7 @@ if (isset($_POST['submit'])) {
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 slideanim">
-                        <form role="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                        <form role="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#slide-6">
                             <div class="row">
                                 <div class="form-group col-lg-4">
                                     <input type="text" name="Name" class="form-control user-name"

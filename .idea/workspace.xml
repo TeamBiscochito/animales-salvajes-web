@@ -27,31 +27,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b26ea2c3-bab3-40c0-9623-ab4d9dc423a0" name="Default Changelist" comment="clean project">
-      <change afterPath="$PROJECT_DIR$/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/next2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/prev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/prev2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/375px-Giraffa_camelopardalis_angolensis.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Plains_Zebra_Equus_quagga.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/TortugaMarina.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/android-icon-48x48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/camello.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/conocer-naturaleza-tiburon-limon-bruce-buscando-a-nemo-xlsemanal-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer-pic10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/footer-pic7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/guila-e1578096579383.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/ornitorrinco.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/pinguino-trio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85cd4c81-f418-49b7-800d-1c4f8049cd31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/85cd4c81-f418-49b7-800d-1c4f8049cd31.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/photoGallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/photoGallery.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tigre.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/tigre.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,14 +75,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Keyster\Desktop\pruebagitweb\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Keyster\Desktop\pruebagitweb\images" />
       <recent name="C:\Users\Keyster\Desktop\pruebagitweb\img" />
       <recent name="C:\Users\Keyster\Desktop\pruebagitweb\archivos php" />
       <recent name="C:\Users\Keyster\Desktop\pruebagitweb\archivos php\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Keyster\Desktop\pruebagitweb\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -330,26 +309,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612214906637" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1612204626859">
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom" timestamp="1612216617433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612204626859" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1612204626859">
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612216617433" />
+    <state width="1877" height="253" key="GridCell.Tab.0.center" timestamp="1612216617433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612204626859" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1612204626859">
+    <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612216617433" />
+    <state width="1877" height="253" key="GridCell.Tab.0.left" timestamp="1612216617433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612204626859" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1612204626859">
+    <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612216617433" />
+    <state width="1877" height="253" key="GridCell.Tab.0.right" timestamp="1612216617433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@-1920.0.1920.1040" timestamp="1611534304555" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612204626859" />
+    <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.47.1280.984@0.0.1920.1040" timestamp="1612216617433" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1611913024215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
