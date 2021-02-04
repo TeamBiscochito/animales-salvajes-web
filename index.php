@@ -303,18 +303,32 @@ if (isset($_POST['submit'])) {
                             </figure>
                             <div class="date" style="width: 30%">2021-01-29</div>
                         </li>
-                        <!--                        <li class="item">-->
-                        <!--                            <figure>-->
-                        <!--                                <div class="view"><img src="images/newImages/ourWork8.png" alt=""/></div>-->
-                        <!--                                <figcaption>-->
-                        <!--                                    <p>-->
-                        <!--                                        <span><a href="https://github.com/TeamBiscochito/proyectofinal/releases/tag/v0.0.9"-->
-                        <!--                                                 target="_blank">Quinta versión v0.0.9</a></span></p>-->
-                        <!--                                    <p><span>Animales Salvajes</span></p>-->
-                        <!--                                </figcaption>-->
-                        <!--                            </figure>-->
-                        <!--                            <div class="date" style="width: 30%">2021-01-29</div>-->
-                        <!--                        </li>-->
+                        <li class="item">
+                            <figure>
+                                <div class="view"><img src="images/newImages/ourWork8.png" alt=""/></div>
+                                <figcaption>
+                                    <p>
+                                        <span><a href="https://github.com/TeamBiscochito/proyectofinal/releases/tag/v0.1.0"
+                                                 target="_blank">Sexta versión v0.1.0</a></span>
+                                    </p>
+                                    <p><span>Animales Salvajes</span></p>
+                                </figcaption>
+                            </figure>
+                            <div class="date" style="width: 30%">2021-02-02</div>
+                        </li>
+                        <li class="item">
+                            <figure>
+                                <div class="view"><img src="images/newImages/ourWork9.png" alt=""/></div>
+                                <figcaption>
+                                    <p>
+                                        <span><a href="https://github.com/TeamBiscochito/proyectofinal/releases/tag/v0.1.2"
+                                                 target="_blank">Séptima versión v0.1.2</a></span>
+                                    </p>
+                                    <p><span>Animales Salvajes</span></p>
+                                </figcaption>
+                            </figure>
+                            <div class="date" style="width: 30%">2021-01-04</div>
+                        </li>
                     </ul>
                 </div>
             </div><!-- /container -->
